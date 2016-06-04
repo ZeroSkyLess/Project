@@ -1,0 +1,42 @@
+﻿Build started 24/12/2014 6:05:07 PM.
+     1>Project "C:\Users\user\Desktop\Workshop\sky\sky\sky.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\visual studio 2013\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\Microsoft.ReportViewer.Common.dll" /FU"C:\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\Microsoft.ReportViewer.WinForms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\MySQL\MySQL Connector Net 6.9.4\Assemblies\v4.5\MySql.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Web.Services.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Admin1.cpp MyForm.cpp adbus.cpp admin.cpp guest.cpp loginguest.cpp modified.cpp pay.cpp
+         Admin1.cpp
+     1>c:\users\user\desktop\workshop\sky\sky\bus.h(133): warning C4101: 'read' : unreferenced local variable
+         MyForm.cpp
+     1>c:\users\user\desktop\workshop\sky\sky\bus.h(133): warning C4101: 'read' : unreferenced local variable
+         adbus.cpp
+     1>c:\users\user\desktop\workshop\sky\sky\bus.h(133): warning C4101: 'read' : unreferenced local variable
+         admin.cpp
+     1>c:\users\user\desktop\workshop\sky\sky\bus.h(133): warning C4101: 'read' : unreferenced local variable
+         guest.cpp
+     1>c:\users\user\desktop\workshop\sky\sky\bus.h(133): warning C4101: 'read' : unreferenced local variable
+         loginguest.cpp
+         modified.cpp
+         pay.cpp
+         Generating Code...
+       Link:
+         D:\visual studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\user\Desktop\Workshop\sky\Debug\sky.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\sky.addsaman.resources /ASSEMBLYRESOURCE:Debug\sky.admin.resources /ASSEMBLYRESOURCE:Debug\sky.Admin1.resources /ASSEMBLYRESOURCE:Debug\sky.bus.resources /ASSEMBLYRESOURCE:Debug\sky.busstatus.resources /ASSEMBLYRESOURCE:Debug\sky.ChangeInfo.resources /ASSEMBLYRESOURCE:Debug\sky.changepass.resources /ASSEMBLYRESOURCE:Debug\sky.checkInfo.resources /ASSEMBLYRESOURCE:Debug\sky.expired.resources /ASSEMBLYRESOURCE:Debug\sky.guest.resources /ASSEMBLYRESOURCE:Debug\sky.loginguest.resources /ASSEMBLYRESOURCE:Debug\sky.modified.resources /ASSEMBLYRESOURCE:Debug\sky.MyForm.resources /ASSEMBLYRESOURCE:Debug\sky.pay.resources /ASSEMBLYRESOURCE:Debug\sky.statistic.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\user\Desktop\Workshop\sky\Debug\sky.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\adbus.obj
+         Debug\addsaman.obj
+         Debug\admin.obj
+         Debug\Admin1.obj
+         Debug\bus.obj
+         Debug\busstatus.obj
+         Debug\ChangeInfo.obj
+         Debug\changepass.obj
+         Debug\checkInfo.obj
+         Debug\expired.obj
+         Debug\guest.obj
+         Debug\loginguest.obj
+         Debug\modified.obj
+         Debug\MyForm.obj
+         Debug\pay.obj
+         Debug\statistic.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         sky.vcxproj -> C:\Users\user\Desktop\Workshop\sky\Debug\sky.exe
+     1>Done Building Project "C:\Users\user\Desktop\Workshop\sky\sky\sky.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.73

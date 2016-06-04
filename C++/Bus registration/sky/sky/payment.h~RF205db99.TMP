@@ -1,0 +1,1086 @@
+#pragma once
+
+namespace sky {
+
+	using namespace System;
+	using namespace System::Runtime;
+	using namespace System::ComponentModel;
+	using namespace System::Collections;
+	using namespace System::Windows::Forms;
+	using namespace System::Data;
+	using namespace System::Drawing;
+	using namespace MySql::Data::MySqlClient;
+
+	/// <summary>
+	/// Summary for payment
+	/// </summary>
+	public ref class payment : public System::Windows::Forms::Form
+	{
+	public:
+		payment(String^ text)
+		{
+			InitializeComponent();
+			plate->Text = text;
+			DateTime c = DateTime::Now;
+			timebox->Text = c.ToString();
+			groupBox4->Visible = false;
+			//
+			//TODO: Add the constructor code here
+			//
+		}
+
+	protected:
+		/// <summary>
+		/// Clean up any resources being used.
+		/// </summary>
+		~payment()
+		{
+			if (components)
+			{
+				delete components;
+			}
+		}
+	private: System::Windows::Forms::TextBox^  plate;
+	private: System::Windows::Forms::TextBox^  timebox;
+	private: System::Windows::Forms::GroupBox^  groupBox1;
+	private: System::Windows::Forms::RadioButton^  radioButton2;
+	private: System::Windows::Forms::RadioButton^  radioButton1;
+
+
+	private: System::Windows::Forms::LinkLabel^  linkLabel1;
+	private: System::Windows::Forms::GroupBox^  groupBox2;
+	private: System::Windows::Forms::ComboBox^  comboBox1;
+	private: System::Windows::Forms::Label^  label1;
+	private: System::Windows::Forms::Button^  button1;
+	private: System::Windows::Forms::TextBox^  penalty;
+
+	private: System::Windows::Forms::TextBox^  reason;
+	private: System::Windows::Forms::Label^  label5;
+	private: System::Windows::Forms::Label^  label4;
+	private: System::Windows::Forms::TextBox^  day;
+	private: System::Windows::Forms::Label^  label3;
+	private: System::Windows::Forms::TextBox^  deadline;
+	private: System::Windows::Forms::Label^  label2;
+	private: System::Windows::Forms::GroupBox^  groupBox3;
+	private: System::Windows::Forms::RadioButton^  radioButton4;
+	private: System::Windows::Forms::RadioButton^  radioButton3;
+	private: System::Windows::Forms::TextBox^  pass;
+	private: System::Windows::Forms::TextBox^  acc;
+	private: System::Windows::Forms::Label^  label7;
+	private: System::Windows::Forms::Label^  label6;
+	private: System::Windows::Forms::GroupBox^  groupBox4;
+	private: System::Windows::Forms::Button^  button2;
+	private: System::Windows::Forms::TextBox^  price;
+
+	private: System::Windows::Forms::Label^  label12;
+	private: System::Windows::Forms::TextBox^  enddate;
+
+	private: System::Windows::Forms::Label^  label11;
+	private: System::Windows::Forms::RadioButton^  radioButton8;
+	private: System::Windows::Forms::RadioButton^  radioButton7;
+	private: System::Windows::Forms::RadioButton^  radioButton6;
+	private: System::Windows::Forms::RadioButton^  radioButton5;
+	private: System::Windows::Forms::Label^  label10;
+	private: System::Windows::Forms::TextBox^  left;
+	private: System::Windows::Forms::Label^  label9;
+	private: System::Windows::Forms::TextBox^  line;
+	private: System::Windows::Forms::Label^  label8;
+	protected:
+
+	protected:
+
+	private:
+		/// <summary>
+		/// Required designer variable.
+		/// </summary>
+		System::ComponentModel::Container ^components;
+
+#pragma region Windows Form Designer generated code
+		/// <summary>
+		/// Required method for Designer support - do not modify
+		/// the contents of this method with the code editor.
+		/// </summary>
+		void InitializeComponent(void)
+		{
+			this->plate = (gcnew System::Windows::Forms::TextBox());
+			this->timebox = (gcnew System::Windows::Forms::TextBox());
+			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
+			this->linkLabel1 = (gcnew System::Windows::Forms::LinkLabel());
+			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->penalty = (gcnew System::Windows::Forms::TextBox());
+			this->reason = (gcnew System::Windows::Forms::TextBox());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->day = (gcnew System::Windows::Forms::TextBox());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->deadline = (gcnew System::Windows::Forms::TextBox());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->groupBox4 = (gcnew System::Windows::Forms::GroupBox());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->price = (gcnew System::Windows::Forms::TextBox());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->enddate = (gcnew System::Windows::Forms::TextBox());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->radioButton8 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton7 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton6 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton5 = (gcnew System::Windows::Forms::RadioButton());
+			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->left = (gcnew System::Windows::Forms::TextBox());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->line = (gcnew System::Windows::Forms::TextBox());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
+			this->pass = (gcnew System::Windows::Forms::TextBox());
+			this->acc = (gcnew System::Windows::Forms::TextBox());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->radioButton4 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton3 = (gcnew System::Windows::Forms::RadioButton());
+			this->groupBox1->SuspendLayout();
+			this->groupBox2->SuspendLayout();
+			this->groupBox4->SuspendLayout();
+			this->groupBox3->SuspendLayout();
+			this->SuspendLayout();
+			// 
+			// plate
+			// 
+			this->plate->Enabled = false;
+			this->plate->Location = System::Drawing::Point(90, 31);
+			this->plate->Name = L"plate";
+			this->plate->Size = System::Drawing::Size(77, 20);
+			this->plate->TabIndex = 0;
+			// 
+			// timebox
+			// 
+			this->timebox->Enabled = false;
+			this->timebox->Location = System::Drawing::Point(358, 31);
+			this->timebox->Name = L"timebox";
+			this->timebox->Size = System::Drawing::Size(136, 20);
+			this->timebox->TabIndex = 1;
+			// 
+			// groupBox1
+			// 
+			this->groupBox1->Controls->Add(this->radioButton2);
+			this->groupBox1->Controls->Add(this->radioButton1);
+			this->groupBox1->Location = System::Drawing::Point(48, 72);
+			this->groupBox1->Name = L"groupBox1";
+			this->groupBox1->Size = System::Drawing::Size(108, 112);
+			this->groupBox1->TabIndex = 2;
+			this->groupBox1->TabStop = false;
+			this->groupBox1->Text = L"Payment";
+			// 
+			// radioButton2
+			// 
+			this->radioButton2->AutoSize = true;
+			this->radioButton2->Location = System::Drawing::Point(7, 72);
+			this->radioButton2->Name = L"radioButton2";
+			this->radioButton2->Size = System::Drawing::Size(65, 17);
+			this->radioButton2->TabIndex = 1;
+			this->radioButton2->TabStop = true;
+			this->radioButton2->Text = L"Roadtax";
+			this->radioButton2->UseVisualStyleBackColor = true;
+			this->radioButton2->CheckedChanged += gcnew System::EventHandler(this, &payment::radioButton2_CheckedChanged);
+			// 
+			// radioButton1
+			// 
+			this->radioButton1->AutoSize = true;
+			this->radioButton1->Location = System::Drawing::Point(6, 34);
+			this->radioButton1->Name = L"radioButton1";
+			this->radioButton1->Size = System::Drawing::Size(58, 17);
+			this->radioButton1->TabIndex = 0;
+			this->radioButton1->TabStop = true;
+			this->radioButton1->Text = L"Saman";
+			this->radioButton1->UseVisualStyleBackColor = true;
+			this->radioButton1->CheckedChanged += gcnew System::EventHandler(this, &payment::radioButton1_CheckedChanged);
+			// 
+			// linkLabel1
+			// 
+			this->linkLabel1->AutoSize = true;
+			this->linkLabel1->Location = System::Drawing::Point(13, 13);
+			this->linkLabel1->Name = L"linkLabel1";
+			this->linkLabel1->Size = System::Drawing::Size(40, 13);
+			this->linkLabel1->TabIndex = 4;
+			this->linkLabel1->TabStop = true;
+			this->linkLabel1->Text = L"< back";
+			// 
+			// groupBox2
+			// 
+			this->groupBox2->Controls->Add(this->groupBox4);
+			this->groupBox2->Controls->Add(this->button1);
+			this->groupBox2->Controls->Add(this->penalty);
+			this->groupBox2->Controls->Add(this->reason);
+			this->groupBox2->Controls->Add(this->label5);
+			this->groupBox2->Controls->Add(this->label4);
+			this->groupBox2->Controls->Add(this->day);
+			this->groupBox2->Controls->Add(this->label3);
+			this->groupBox2->Controls->Add(this->deadline);
+			this->groupBox2->Controls->Add(this->label2);
+			this->groupBox2->Controls->Add(this->comboBox1);
+			this->groupBox2->Controls->Add(this->label1);
+			this->groupBox2->Location = System::Drawing::Point(222, 72);
+			this->groupBox2->Name = L"groupBox2";
+			this->groupBox2->Size = System::Drawing::Size(272, 263);
+			this->groupBox2->TabIndex = 5;
+			this->groupBox2->TabStop = false;
+			this->groupBox2->Text = L"Saman";
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(169, 234);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->TabIndex = 10;
+			this->button1->Text = L"Pay";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &payment::button1_Click_1);
+			// 
+			// penalty
+			// 
+			this->penalty->Enabled = false;
+			this->penalty->Location = System::Drawing::Point(107, 206);
+			this->penalty->Name = L"penalty";
+			this->penalty->Size = System::Drawing::Size(100, 20);
+			this->penalty->TabIndex = 9;
+			// 
+			// reason
+			// 
+			this->reason->Enabled = false;
+			this->reason->Location = System::Drawing::Point(107, 159);
+			this->reason->Name = L"reason";
+			this->reason->Size = System::Drawing::Size(100, 20);
+			this->reason->TabIndex = 8;
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Location = System::Drawing::Point(22, 209);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(68, 13);
+			this->label5->TabIndex = 7;
+			this->label5->Text = L"Penalty : RM";
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Location = System::Drawing::Point(32, 162);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(44, 13);
+			this->label4->TabIndex = 6;
+			this->label4->Text = L"Reason";
+			// 
+			// day
+			// 
+			this->day->Enabled = false;
+			this->day->Location = System::Drawing::Point(169, 116);
+			this->day->Name = L"day";
+			this->day->Size = System::Drawing::Size(60, 20);
+			this->day->TabIndex = 5;
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Location = System::Drawing::Point(166, 98);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(41, 13);
+			this->label3->TabIndex = 4;
+			this->label3->Text = L"day left";
+			// 
+			// deadline
+			// 
+			this->deadline->Enabled = false;
+			this->deadline->Location = System::Drawing::Point(16, 116);
+			this->deadline->Name = L"deadline";
+			this->deadline->Size = System::Drawing::Size(100, 20);
+			this->deadline->TabIndex = 3;
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Location = System::Drawing::Point(16, 99);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(83, 13);
+			this->label2->TabIndex = 2;
+			this->label2->Text = L"Saman deadline";
+			// 
+			// comboBox1
+			// 
+			this->comboBox1->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->comboBox1->FormattingEnabled = true;
+			this->comboBox1->Location = System::Drawing::Point(19, 37);
+			this->comboBox1->Name = L"comboBox1";
+			this->comboBox1->Size = System::Drawing::Size(121, 21);
+			this->comboBox1->TabIndex = 1;
+			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &payment::comboBox1_SelectedIndexChanged_1);
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(16, 20);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(216, 13);
+			this->label1->TabIndex = 0;
+			this->label1->Text = L"Please select which saman you want to pay ";
+			// 
+			// groupBox4
+			// 
+			this->groupBox4->Controls->Add(this->button2);
+			this->groupBox4->Controls->Add(this->price);
+			this->groupBox4->Controls->Add(this->label12);
+			this->groupBox4->Controls->Add(this->enddate);
+			this->groupBox4->Controls->Add(this->label11);
+			this->groupBox4->Controls->Add(this->radioButton8);
+			this->groupBox4->Controls->Add(this->radioButton7);
+			this->groupBox4->Controls->Add(this->radioButton6);
+			this->groupBox4->Controls->Add(this->radioButton5);
+			this->groupBox4->Controls->Add(this->label10);
+			this->groupBox4->Controls->Add(this->left);
+			this->groupBox4->Controls->Add(this->label9);
+			this->groupBox4->Controls->Add(this->line);
+			this->groupBox4->Controls->Add(this->label8);
+			this->groupBox4->Location = System::Drawing::Point(0, 0);
+			this->groupBox4->Name = L"groupBox4";
+			this->groupBox4->Size = System::Drawing::Size(294, 314);
+			this->groupBox4->TabIndex = 6;
+			this->groupBox4->TabStop = false;
+			this->groupBox4->Text = L"Road Tax";
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(213, 285);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->TabIndex = 13;
+			this->button2->Text = L"Pay";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &payment::button2_Click);
+			// 
+			// price
+			// 
+			this->price->Enabled = false;
+			this->price->Location = System::Drawing::Point(99, 262);
+			this->price->Name = L"price";
+			this->price->Size = System::Drawing::Size(100, 20);
+			this->price->TabIndex = 12;
+			// 
+			// label12
+			// 
+			this->label12->AutoSize = true;
+			this->label12->Location = System::Drawing::Point(7, 265);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(57, 13);
+			this->label12->TabIndex = 11;
+			this->label12->Text = L"Price : RM";
+			// 
+			// enddate
+			// 
+			this->enddate->Enabled = false;
+			this->enddate->Location = System::Drawing::Point(99, 227);
+			this->enddate->Name = L"enddate";
+			this->enddate->Size = System::Drawing::Size(109, 20);
+			this->enddate->TabIndex = 10;
+			// 
+			// label11
+			// 
+			this->label11->AutoSize = true;
+			this->label11->Location = System::Drawing::Point(7, 230);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(69, 13);
+			this->label11->TabIndex = 9;
+			this->label11->Text = L"New dateline";
+			// 
+			// radioButton8
+			// 
+			this->radioButton8->AutoSize = true;
+			this->radioButton8->Location = System::Drawing::Point(23, 185);
+			this->radioButton8->Name = L"radioButton8";
+			this->radioButton8->Size = System::Drawing::Size(37, 17);
+			this->radioButton8->TabIndex = 8;
+			this->radioButton8->TabStop = true;
+			this->radioButton8->Text = L"20";
+			this->radioButton8->UseVisualStyleBackColor = true;
+			// 
+			// radioButton7
+			// 
+			this->radioButton7->AutoSize = true;
+			this->radioButton7->Location = System::Drawing::Point(23, 161);
+			this->radioButton7->Name = L"radioButton7";
+			this->radioButton7->Size = System::Drawing::Size(37, 17);
+			this->radioButton7->TabIndex = 7;
+			this->radioButton7->TabStop = true;
+			this->radioButton7->Text = L"15";
+			this->radioButton7->UseVisualStyleBackColor = true;
+			// 
+			// radioButton6
+			// 
+			this->radioButton6->AutoSize = true;
+			this->radioButton6->Location = System::Drawing::Point(23, 137);
+			this->radioButton6->Name = L"radioButton6";
+			this->radioButton6->Size = System::Drawing::Size(37, 17);
+			this->radioButton6->TabIndex = 6;
+			this->radioButton6->TabStop = true;
+			this->radioButton6->Text = L"10";
+			this->radioButton6->UseVisualStyleBackColor = true;
+			// 
+			// radioButton5
+			// 
+			this->radioButton5->AutoSize = true;
+			this->radioButton5->Location = System::Drawing::Point(23, 113);
+			this->radioButton5->Name = L"radioButton5";
+			this->radioButton5->Size = System::Drawing::Size(31, 17);
+			this->radioButton5->TabIndex = 5;
+			this->radioButton5->TabStop = true;
+			this->radioButton5->Text = L"5";
+			this->radioButton5->UseVisualStyleBackColor = true;
+			// 
+			// label10
+			// 
+			this->label10->AutoSize = true;
+			this->label10->Location = System::Drawing::Point(20, 89);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(179, 13);
+			this->label10->TabIndex = 4;
+			this->label10->Text = L"Select year you want to pay road tax";
+			// 
+			// left
+			// 
+			this->left->Enabled = false;
+			this->left->Location = System::Drawing::Point(175, 50);
+			this->left->Name = L"left";
+			this->left->Size = System::Drawing::Size(100, 20);
+			this->left->TabIndex = 3;
+			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->Location = System::Drawing::Point(184, 34);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(41, 13);
+			this->label9->TabIndex = 2;
+			this->label9->Text = L"day left";
+			// 
+			// line
+			// 
+			this->line->Enabled = false;
+			this->line->Location = System::Drawing::Point(20, 50);
+			this->line->Name = L"line";
+			this->line->Size = System::Drawing::Size(100, 20);
+			this->line->TabIndex = 1;
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Location = System::Drawing::Point(17, 34);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(49, 13);
+			this->label8->TabIndex = 0;
+			this->label8->Text = L"Deadline";
+			// 
+			// groupBox3
+			// 
+			this->groupBox3->Controls->Add(this->pass);
+			this->groupBox3->Controls->Add(this->acc);
+			this->groupBox3->Controls->Add(this->label7);
+			this->groupBox3->Controls->Add(this->label6);
+			this->groupBox3->Controls->Add(this->radioButton4);
+			this->groupBox3->Controls->Add(this->radioButton3);
+			this->groupBox3->Location = System::Drawing::Point(9, 208);
+			this->groupBox3->Name = L"groupBox3";
+			this->groupBox3->Size = System::Drawing::Size(190, 178);
+			this->groupBox3->TabIndex = 5;
+			this->groupBox3->TabStop = false;
+			this->groupBox3->Text = L"Payment Type";
+			// 
+			// pass
+			// 
+			this->pass->Location = System::Drawing::Point(10, 134);
+			this->pass->MaxLength = 6;
+			this->pass->Name = L"pass";
+			this->pass->PasswordChar = '*';
+			this->pass->Size = System::Drawing::Size(100, 20);
+			this->pass->TabIndex = 5;
+			// 
+			// acc
+			// 
+			this->acc->Enabled = false;
+			this->acc->Location = System::Drawing::Point(10, 76);
+			this->acc->MaxLength = 16;
+			this->acc->Name = L"acc";
+			this->acc->Size = System::Drawing::Size(121, 20);
+			this->acc->TabIndex = 4;
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Location = System::Drawing::Point(9, 117);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(53, 13);
+			this->label7->TabIndex = 3;
+			this->label7->Text = L"Password";
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Location = System::Drawing::Point(7, 59);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(94, 13);
+			this->label6->TabIndex = 2;
+			this->label6->Text = L"Account number : ";
+			// 
+			// radioButton4
+			// 
+			this->radioButton4->AutoSize = true;
+			this->radioButton4->Location = System::Drawing::Point(126, 20);
+			this->radioButton4->Name = L"radioButton4";
+			this->radioButton4->Size = System::Drawing::Size(49, 17);
+			this->radioButton4->TabIndex = 1;
+			this->radioButton4->TabStop = true;
+			this->radioButton4->Text = L"Cash";
+			this->radioButton4->UseVisualStyleBackColor = true;
+			this->radioButton4->CheckedChanged += gcnew System::EventHandler(this, &payment::radioButton4_CheckedChanged);
+			// 
+			// radioButton3
+			// 
+			this->radioButton3->AutoSize = true;
+			this->radioButton3->Location = System::Drawing::Point(7, 20);
+			this->radioButton3->Name = L"radioButton3";
+			this->radioButton3->Size = System::Drawing::Size(77, 17);
+			this->radioButton3->TabIndex = 0;
+			this->radioButton3->TabStop = true;
+			this->radioButton3->Text = L"Credit Card";
+			this->radioButton3->UseVisualStyleBackColor = true;
+			this->radioButton3->CheckedChanged += gcnew System::EventHandler(this, &payment::radioButton3_CheckedChanged);
+			// 
+			// payment
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(597, 413);
+			this->Controls->Add(this->groupBox3);
+			this->Controls->Add(this->groupBox2);
+			this->Controls->Add(this->linkLabel1);
+			this->Controls->Add(this->groupBox1);
+			this->Controls->Add(this->timebox);
+			this->Controls->Add(this->plate);
+			this->Name = L"payment";
+			this->Text = L"payment";
+			this->groupBox1->ResumeLayout(false);
+			this->groupBox1->PerformLayout();
+			this->groupBox2->ResumeLayout(false);
+			this->groupBox2->PerformLayout();
+			this->groupBox4->ResumeLayout(false);
+			this->groupBox4->PerformLayout();
+			this->groupBox3->ResumeLayout(false);
+			this->groupBox3->PerformLayout();
+			this->ResumeLayout(false);
+			this->PerformLayout();
+
+		}
+#pragma endregion
+
+		Int32 dayleft = Convert::ToInt32(left->Text); // calculate the day left or day overdate
+		double pay = 0.0;
+		double total = 0.0;
+		double interest = 1;
+		bool cash = true;
+
+
+		// Credit Card
+	private: System::Void radioButton3_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		acc->Enabled = true;
+		pass->Enabled = true;
+	}
+
+
+			 // Cash
+	private: System::Void radioButton4_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		acc->Enabled = false;
+		pass->Enabled = false;
+	}
+
+
+			 //Show Saman Group Box
+	private: System::Void radioButton1_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		//Invisible the roadtax group box
+		//visible the saman group box
+		groupBox4->Visible = false;
+		groupBox2->Visible = true;
+
+		//start coding
+
+		//retrieve the saman from the user
+		String^ constring = L"datasource=localhost;port=3306;username=root;password=1234";
+
+		MySqlConnection^ conDatabase1 = gcnew MySqlConnection(constring);
+
+		MySqlCommand^ cmdDatabase1 = gcnew MySqlCommand("select * from workshop.saman where status = 'Not Paid' and busplate = '" + this->plate->Text + "';", conDatabase1);
+
+		MySqlDataReader^ read1;
+
+		try
+		{
+			conDatabase1->Open();
+			read1 = cmdDatabase1->ExecuteReader();
+			bool no = true;
+
+
+			while (read1->Read())
+			{
+				String^ da;
+				da = read1->GetDateTime("dateSaman").ToString("yyyy-MM-dd");
+				comboBox1->Items->Add(da);
+			}
+
+
+		}
+		catch (Exception^ex)
+		{
+			MessageBox::Show(ex->Message);
+		}
+		read1->Close();
+
+	}
+
+
+			 //Show Road Tax Group Box
+	private: System::Void radioButton2_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		//set saman group box invisible
+		//visible the roadtax group box
+		groupBox2->Visible = false;
+		groupBox4->Visible = true;
+
+		// start coding
+
+		String^ constring = L"datasource=localhost;port=3306;username=root;password=1234";
+
+		// retrieve bus road tax value from road tax
+		MySqlConnection^ conDatabase2 = gcnew MySqlConnection(constring);
+
+		MySqlCommand^ cmdDatabase2 = gcnew MySqlCommand("select * from workshop.roadtax where bplate = '" + this->plate->Text + "';", conDatabase2);
+
+		MySqlDataReader^ read2;
+
+		try
+		{
+			conDatabase2->Open();
+			read2 = cmdDatabase2->ExecuteReader();
+			if (read2->Read())
+			{
+				String^ ends = read2->GetDateTime("endDate").ToString("dd-MM-yyyy");
+				line->Text = ends;
+
+				read2->Close();
+
+			}
+
+		}
+
+		catch (Exception^ex)
+		{
+			MessageBox::Show(ex->Message);
+
+		}
+
+
+		//Different Day
+		MySqlConnection^ conDatabase3 = gcnew MySqlConnection(constring);
+		MySqlCommand^ cmdDatabase3 = gcnew MySqlCommand("select datediff (endDate,now()) as diff from workshop.roadtax where bplate = '" + this->plate->Text + "';", conDatabase3);
+
+		MySqlDataReader^ read3;
+
+		try
+		{
+			conDatabase3->Open();
+			read3 = cmdDatabase3->ExecuteReader();
+			if (read3->Read())
+			{
+				String^ dif = read3->GetInt64("diff").ToString();
+				left->Text = dif;
+			}
+
+			read3->Close();
+		}
+
+		catch (Exception^ex)
+		{
+			MessageBox::Show(ex->Message);
+
+		}
+	}
+
+
+			 //Pay Saman
+	private: System::Void button1_Click_1(System::Object^  sender, System::EventArgs^  e) {
+
+		if (MessageBox::Show("Are your confirmed to pay this saman?", "Saman", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == System::Windows::Forms::DialogResult::Yes)
+		{
+			String^ constring = L"datasource=localhost;port=3306;username=root;password=1234";
+
+			// find price
+			MySqlConnection^ conDatabase4 = gcnew MySqlConnection;
+			MySqlCommand^ cmdDatabase4 = gcnew MySqlCommand("update workshop.saman set endDate = 'null' and status = 'Paid' where dateSaman = '" + this->comboBox1->Text + "' and bplate = '" + this->plate->Text + "';", conDatabase4);
+
+			MySqlDataReader^ read4;
+
+			try
+			{
+				conDatabase4->Open();
+				read4 = cmdDatabase4->ExecuteReader();
+				if (read4->Read())
+				{
+					if (cash)
+						MessageBox::Show("Please go counter to pay your payment, Thank you");
+
+					else
+						MessageBox::Show("Your Payment is successful, Thank you");
+
+					comboBox1->Items->Remove(comboBox1->Text);
+				}
+
+				read4->Close();
+			}
+
+			catch (Exception^ex)
+			{
+				MessageBox::Show(ex->Message);
+
+			}
+		}
+	}
+
+			 //Pay Road Tax
+	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+
+		if (MessageBox::Show("Are your confirmed to pay?", "Road Tax", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == System::Windows::Forms::DialogResult::Yes)
+		{
+			String^ constring = L"datasource=localhost;port=3306;username=root;password=1234";
+
+			// find price
+			MySqlConnection^ conDatabase4 = gcnew MySqlConnection;
+			MySqlCommand^ cmdDatabase4 = gcnew MySqlCommand("update workshop.roadtax set endDate = '" + this->enddate->Text + "' and startDate = 'curDate()' where bplate = '" + this->plate->Text + "';", conDatabase4);
+
+			MySqlDataReader^ read4;
+
+			try
+			{
+				conDatabase4->Open();
+				read4 = cmdDatabase4->ExecuteReader();
+				if (read4->Read())
+				{
+					if (cash)
+						MessageBox::Show("Please go counter to pay your payment, Thank you");
+
+					else
+						MessageBox::Show("Your Payment is successful, Thank you");
+
+				}
+
+				read4->Close();
+			}
+
+			catch (Exception^ex)
+			{
+				MessageBox::Show(ex->Message);
+
+			}
+		}
+	}
+
+
+			 //road tax pay 5 year
+	private: System::Void radioButton5_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+
+		int year = 5;
+
+		String^ constring = L"datasource=localhost;port=3306;username=root;password=1234";
+
+		// find price
+		MySqlConnection^ conDatabase4 = gcnew MySqlConnection;
+		MySqlCommand^ cmdDatabase4 = gcnew MySqlCommand("select * from workshop.bus where bplate = '" + this->plate->Text + "';", conDatabase4);
+
+		MySqlDataReader^ read4;
+
+		try
+		{
+			conDatabase4->Open();
+			read4 = cmdDatabase4->ExecuteReader();
+			if (read4->Read())
+			{
+				String^ type = read4->GetString("btype");
+				String^ cc = read4->GetString("capacity");
+
+				if (type == "Public")
+				{
+					pay = 20;
+				}
+
+				else if (type == "Private")
+				{
+
+					pay = 40;
+				}
+
+				else
+				{
+
+					pay = 10;
+				}
+
+				if (cc == "less than or equal 45")
+				{
+					pay = 1.5 * pay;
+				}
+
+				total = pay * year;
+
+				price->Text = total.ToString();
+			}
+		}
+		catch (Exception^ex)
+		{
+			MessageBox::Show(ex->Message);
+
+		}
+	}
+
+
+			 //road tax pay 10 year
+	private: System::Void radioButton6_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		int year = 10;
+
+		String^ constring = L"datasource=localhost;port=3306;username=root;password=1234";
+
+		// find price
+		MySqlConnection^ conDatabase4 = gcnew MySqlConnection;
+		MySqlCommand^ cmdDatabase4 = gcnew MySqlCommand("select * from workshop.bus where bplate = '" + this->plate->Text + "';", conDatabase4);
+
+		MySqlDataReader^ read4;
+
+		try
+		{
+			conDatabase4->Open();
+			read4 = cmdDatabase4->ExecuteReader();
+			if (read4->Read())
+			{
+				String^ type = read4->GetString("btype");
+				String^ cc = read4->GetString("capacity");
+
+				if (type == "Public")
+				{
+					pay = 20;
+				}
+
+				else if (type == "Private")
+				{
+
+					pay = 40;
+				}
+
+				else
+				{
+
+					pay = 10;
+				}
+
+				if (cc == "less than or equal 45")
+				{
+					pay = 1.5 * pay;
+				}
+
+				total = pay * year;
+
+				price->Text = total.ToString();
+			}
+		}
+		catch (Exception^ex)
+		{
+			MessageBox::Show(ex->Message);
+
+		}
+	}
+
+
+			 //road tax pay 15 year
+	private: System::Void radioButton7_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		int year = 15;
+
+		String^ constring = L"datasource=localhost;port=3306;username=root;password=1234";
+
+		// find price
+		MySqlConnection^ conDatabase4 = gcnew MySqlConnection;
+		MySqlCommand^ cmdDatabase4 = gcnew MySqlCommand("select * from workshop.bus where bplate = '" + this->plate->Text + "';", conDatabase4);
+
+		MySqlDataReader^ read4;
+
+		try
+		{
+			conDatabase4->Open();
+			read4 = cmdDatabase4->ExecuteReader();
+			if (read4->Read())
+			{
+				String^ type = read4->GetString("btype");
+				String^ cc = read4->GetString("capacity");
+
+				if (type == "Public")
+				{
+					pay = 20;
+				}
+
+				else if (type == "Private")
+				{
+
+					pay = 40;
+				}
+
+				else
+				{
+
+					pay = 10;
+				}
+
+				if (cc == "less than or equal 45")
+				{
+					pay = 1.5 * pay;
+				}
+
+				total = pay * year;
+
+				price->Text = total.ToString();
+			}
+		}
+		catch (Exception^ex)
+		{
+			MessageBox::Show(ex->Message);
+
+		}
+	}
+
+
+			 //road tax pay 20 year
+	private: System::Void radioButton8_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		int year = 20;
+
+		String^ constring = L"datasource=localhost;port=3306;username=root;password=1234";
+
+		// find price
+		MySqlConnection^ conDatabase4 = gcnew MySqlConnection;
+		MySqlCommand^ cmdDatabase4 = gcnew MySqlCommand("select * from workshop.bus where bplate = '" + this->plate->Text + "';", conDatabase4);
+
+		MySqlDataReader^ read4;
+
+		try
+		{
+			conDatabase4->Open();
+			read4 = cmdDatabase4->ExecuteReader();
+			if (read4->Read())
+			{
+				String^ type = read4->GetString("btype");
+				String^ cc = read4->GetString("capacity");
+
+				if (type == "Public")
+				{
+					pay = 20;
+				}
+
+				else if (type == "Private")
+				{
+
+					pay = 40;
+				}
+
+				else
+				{
+
+					pay = 10;
+				}
+
+				if (cc == "less than or equal 45")
+				{
+					pay = 1.5 * pay;
+				}
+
+				total = pay * year;
+
+				price->Text = total.ToString();
+			}
+		}
+		catch (Exception^ex)
+		{
+			MessageBox::Show(ex->Message);
+
+		}
+	}
+
+
+			 // retrieve value from workshop.saman
+	private: System::Void comboBox1_SelectedIndexChanged_1(System::Object^  sender, System::EventArgs^  e) {
+		String^ comboval = comboBox1->Text;
+
+		String^ constring = L"datasource=localhost;port=3306;username=root;password=1234";
+
+		MySqlConnection^ conDatabase1 = gcnew MySqlConnection(constring);
+
+		MySqlCommand^ cmdDatabase1 = gcnew MySqlCommand("select * from workshop.saman where dateSaman = '" + this->comboBox1->Text + "';", conDatabase1);
+
+		MySqlDataReader^ read1;
+
+		try
+		{
+			conDatabase1->Open();
+			read1 = cmdDatabase1->ExecuteReader();
+
+			if (read1->Read())
+			{
+
+				String^ en = read1->GetDateTime("deadline").ToString();
+				deadline->Text = en;
+
+				String^ re = read1->GetString("reason");
+				reason->Text = re;
+
+				String^ pe = read1->GetString("penalty");
+				penalty->Text = pe;
+
+			}
+
+		}
+		catch (Exception^ex)
+		{
+			MessageBox::Show(ex->Message);
+		}
+		read1->Close();
+
+		// find day left
+		MySqlConnection^ conDatabase3 = gcnew MySqlConnection(constring);
+		MySqlCommand^ cmdDatabase3 = gcnew MySqlCommand("select datediff (dateSaman,now()) as diff from workshop.saman where dateSaman = '" + this->comboBox1->Text + "';", conDatabase3);
+
+		MySqlDataReader^ read3;
+
+		try
+		{
+			conDatabase3->Open();
+			read3 = cmdDatabase3->ExecuteReader();
+			if (read3->Read())
+			{
+				String^ dif = read3->GetInt64("diff").ToString();
+				day->Text = dif;
+			}
+
+			read3->Close();
+		}
+
+		catch (Exception^ex)
+		{
+			MessageBox::Show(ex->Message);
+
+		}
+	}
+
+	
+};
+}

@@ -1,0 +1,2125 @@
+  Microsoft.Reporting.CommonStrings.resources - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.ReportToolBar.resources - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.AsyncWaitMessage.resources - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.DropDownResizeGlyph.resources - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.RSDocMap.resources - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.RSParams.resources - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.ReportViewer.resources - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.WinRSviewer.resources - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.ReportPreviewStrings.resources - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.ExportDialog.resources - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.InteractivityImages.resources - Embedded, ContainedInManifestFile, 
+  Microsoft.ReportingServices.Rendering.ImageRenderer.ImageRendererRes.resources - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.Resources.SpinningWheel.gif - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.Resources.16cal.gif - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.ReportViewer.bmp - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.Resources.SplitterVertCollapse.png - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.Resources.SplitterVertExpand.png - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.Resources.SplitterHorizCollapse.png - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.Resources.SplitterHorizExpand.png - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.Resources.SplitterVertCollapseHover.png - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.Resources.SplitterVertExpandHover.png - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.Resources.SplitterHorizCollapseHover.png - Embedded, ContainedInManifestFile, 
+  Microsoft.Reporting.WinForms.Resources.SplitterHorizExpandHover.png - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v2.0.50727
+Assembly Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Microsoft.Reporting.WinForms.Report: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Properties:
+    System.String DisplayName 'get set' : 
+    Boolean IsDrillthroughReport 'get ' : 
+    Boolean IsReadyForRendering 'get ' : 
+  Methods:
+    get_DisplayName(): PrivateScope, Public, HideBySig, SpecialName
+    set_DisplayName(String): PrivateScope, Public, HideBySig, SpecialName
+    GetParameters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetParameters(IEnumerable`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetTotalPages(PageCountMode&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ListRenderingExtensions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LoadReportDefinition(TextReader): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Refresh(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Render(String, String, PageCountMode, String&(Out), String&(Out), String&(Out), String[]&(Out), Warning[]&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetDefaultPageSettings(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetTotalPages(): PrivateScope, Public, HideBySig
+    Render(String): PrivateScope, Public, HideBySig
+    Render(String, String): PrivateScope, Public, HideBySig
+    Render(String, String, String&(Out), String&(Out), String&(Out), String[]&(Out), Warning[]&(Out)): PrivateScope, Public, HideBySig
+    GetDocumentMap(): PrivateScope, Public, HideBySig
+    get_IsDrillthroughReport(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsReadyForRendering(): PrivateScope, Public, HideBySig, SpecialName
+    LoadReportDefinition(Stream): PrivateScope, Public, HideBySig
+    SetParameters(ReportParameter): PrivateScope, Public, HideBySig
+Class Microsoft.Reporting.WinForms.LocalReport: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.Report
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Runtime.Serialization.ISerializable
+    System.IDisposable
+  Properties:
+    System.String ReportPath 'get set' : 
+    System.String ReportEmbeddedResource 'get set' : 
+    Boolean EnableExternalImages 'get set' : 
+    Boolean ShowDetailedSubreportMessages 'get set' : 
+    Boolean EnableHyperlinks 'get set' : 
+    Microsoft.Reporting.WinForms.ReportDataSourceCollection DataSources 'get ' : 
+    System.Collections.Generic.IList`1[Microsoft.Reporting.WinForms.ReportParameter] OriginalParametersToDrillthrough 'get ' : 
+  Events:
+    Microsoft.Reporting.WinForms.SubreportProcessingEventHandler SubreportProcessing: 
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_ReportPath(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReportPath(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ReportEmbeddedResource(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReportEmbeddedResource(String): PrivateScope, Public, HideBySig, SpecialName
+    get_EnableExternalImages(): PrivateScope, Public, HideBySig, SpecialName
+    set_EnableExternalImages(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowDetailedSubreportMessages(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowDetailedSubreportMessages(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_EnableHyperlinks(): PrivateScope, Public, HideBySig, SpecialName
+    set_EnableHyperlinks(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_DataSources(): PrivateScope, Public, HideBySig, SpecialName
+    GetDataSourceNames(): PrivateScope, Public, HideBySig
+    GetTotalPages(PageCountMode&(Out)): PrivateScope, Public, Virtual, HideBySig
+    LoadReportDefinition(TextReader): PrivateScope, Public, Virtual, HideBySig
+    LoadSubreportDefinition(String, TextReader): PrivateScope, Public, HideBySig
+    LoadSubreportDefinition(String, Stream): PrivateScope, Public, HideBySig
+    GetDefaultPageSettings(): PrivateScope, Public, Virtual, HideBySig
+    ExecuteReportInCurrentAppDomain(Evidence): PrivateScope, Public, HideBySig (Obsolete)
+    AddTrustedCodeModuleInCurrentAppDomain(String): PrivateScope, Public, HideBySig (Obsolete)
+    ExecuteReportInSandboxAppDomain(): PrivateScope, Public, HideBySig (Obsolete)
+    AddFullTrustModuleInSandboxAppDomain(StrongName): PrivateScope, Public, HideBySig
+    SetBasePermissionsForSandboxAppDomain(PermissionSet): PrivateScope, Public, HideBySig
+    ReleaseSandboxAppDomain(): PrivateScope, Public, HideBySig
+    Refresh(): PrivateScope, Public, Virtual, HideBySig
+    get_OriginalParametersToDrillthrough(): PrivateScope, Public, HideBySig, SpecialName
+    GetParameters(): PrivateScope, Public, Virtual, HideBySig
+    SetParameters(IEnumerable`1): PrivateScope, Public, Virtual, HideBySig
+    Render(String, String, PageCountMode, String&(Out), String&(Out), String&(Out), String[]&(Out), Warning[]&(Out)): PrivateScope, Public, Virtual, HideBySig
+    Render(String, String, CreateStreamCallback, Warning[]&(Out)): PrivateScope, Public, HideBySig
+    Render(String, String, PageCountMode, CreateStreamCallback, Warning[]&(Out)): PrivateScope, Public, HideBySig
+    add_SubreportProcessing(SubreportProcessingEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SubreportProcessing(SubreportProcessingEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    ListRenderingExtensions(): PrivateScope, Public, Virtual, HideBySig
+Class Microsoft.Reporting.WinForms.ServerReport: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.Report
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Runtime.Serialization.ISerializable
+  Properties:
+    System.Uri ReportServerUrl 'get set' : 
+    Microsoft.Reporting.WinForms.ReportServerCredentials ReportServerCredentials 'get ' : 
+    Int32 Timeout 'get set' : 
+    Microsoft.Reporting.WinForms.ReportViewerHeaderCollection Headers 'get ' : 
+    Microsoft.Reporting.WinForms.ReportViewerCookieCollection Cookies 'get ' : 
+    System.String ReportPath 'get set' : 
+    System.String HistoryId 'get set' : 
+  Methods:
+    get_ReportServerUrl(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReportServerUrl(Uri): PrivateScope, Public, HideBySig, SpecialName
+    get_ReportServerCredentials(): PrivateScope, Public, HideBySig, SpecialName
+    get_Timeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_Timeout(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Headers(): PrivateScope, Public, HideBySig, SpecialName
+    get_Cookies(): PrivateScope, Public, HideBySig, SpecialName
+    get_ReportPath(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReportPath(String): PrivateScope, Public, HideBySig, SpecialName
+    get_HistoryId(): PrivateScope, Public, HideBySig, SpecialName
+    set_HistoryId(String): PrivateScope, Public, HideBySig, SpecialName
+    IsQueryExecutionAllowed(): PrivateScope, Public, HideBySig
+    GetParameters(): PrivateScope, Public, Virtual, HideBySig
+    SetParameters(IEnumerable`1): PrivateScope, Public, Virtual, HideBySig
+    GetDefaultPageSettings(): PrivateScope, Public, Virtual, HideBySig
+    SetDataSourceCredentials(IEnumerable`1): PrivateScope, Public, HideBySig
+    SetExecutionId(String): PrivateScope, Public, HideBySig
+    GetExecutionId(): PrivateScope, Public, HideBySig
+    Render(String, String, NameValueCollection, String&(Out), String&(Out)): PrivateScope, Public, HideBySig
+    Render(String, String, NameValueCollection, Stream, String&(Out), String&(Out)): PrivateScope, Public, HideBySig
+    Render(String, String, PageCountMode, String&(Out), String&(Out), String&(Out), String[]&(Out), Warning[]&(Out)): PrivateScope, Public, Virtual, HideBySig
+    RenderStream(String, String, String, String&(Out), String&(Out)): PrivateScope, Public, HideBySig
+    LoadReportDefinition(TextReader): PrivateScope, Public, Virtual, HideBySig
+    GetTotalPages(PageCountMode&(Out)): PrivateScope, Public, Virtual, HideBySig
+    ListRenderingExtensions(): PrivateScope, Public, Virtual, HideBySig
+    Refresh(): PrivateScope, Public, Virtual, HideBySig
+    GetDataSources(): PrivateScope, Public, HideBySig
+    GetDataSources(Boolean&(Out)): PrivateScope, Public, HideBySig
+    GetServerVersion(): PrivateScope, Public, HideBySig
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ReportExecutionService: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Web.Services.Protocols.SoapHttpClientProtocol
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.TrustedUserHeader TrustedUserHeaderValue 'get set' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.PrintControlClsidHeader PrintControlClsidHeaderValue 'get set' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ServerInfoHeader ServerInfoHeaderValue 'get set' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionHeader ExecutionHeaderValue 'get set' : 
+  Events:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ListSecureMethodsCompletedEventHandler ListSecureMethodsCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadReportCompletedEventHandler LoadReportCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadReport2CompletedEventHandler LoadReport2Completed: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadReportDefinitionCompletedEventHandler LoadReportDefinitionCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadReportDefinition2CompletedEventHandler LoadReportDefinition2Completed: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SetExecutionCredentialsCompletedEventHandler SetExecutionCredentialsCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SetExecutionCredentials2CompletedEventHandler SetExecutionCredentials2Completed: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SetExecutionParametersCompletedEventHandler SetExecutionParametersCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SetExecutionParameters2CompletedEventHandler SetExecutionParameters2Completed: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ResetExecutionCompletedEventHandler ResetExecutionCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ResetExecution2CompletedEventHandler ResetExecution2Completed: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.RenderCompletedEventHandler RenderCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.Render2CompletedEventHandler Render2Completed: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.RenderStreamCompletedEventHandler RenderStreamCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.GetExecutionInfoCompletedEventHandler GetExecutionInfoCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.GetExecutionInfo2CompletedEventHandler GetExecutionInfo2Completed: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.GetDocumentMapCompletedEventHandler GetDocumentMapCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadDrillthroughTargetCompletedEventHandler LoadDrillthroughTargetCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadDrillthroughTarget2CompletedEventHandler LoadDrillthroughTarget2Completed: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ToggleItemCompletedEventHandler ToggleItemCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.NavigateDocumentMapCompletedEventHandler NavigateDocumentMapCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.NavigateBookmarkCompletedEventHandler NavigateBookmarkCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.FindStringCompletedEventHandler FindStringCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SortCompletedEventHandler SortCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.Sort2CompletedEventHandler Sort2Completed: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.GetRenderResourceCompletedEventHandler GetRenderResourceCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ListRenderingExtensionsCompletedEventHandler ListRenderingExtensionsCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LogonUserCompletedEventHandler LogonUserCompleted: 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LogoffCompletedEventHandler LogoffCompleted: 
+  Methods:
+    BeginLoadDrillthroughTarget(String, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndLoadDrillthroughTarget(IAsyncResult): PrivateScope, Public, HideBySig
+    LoadDrillthroughTargetAsync(String): PrivateScope, Public, HideBySig
+    LoadDrillthroughTargetAsync(String, Object): PrivateScope, Public, HideBySig
+    LoadDrillthroughTarget2(String): PrivateScope, Public, HideBySig
+    BeginLoadDrillthroughTarget2(String, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndLoadDrillthroughTarget2(IAsyncResult): PrivateScope, Public, HideBySig
+    LoadDrillthroughTarget2Async(String): PrivateScope, Public, HideBySig
+    LoadDrillthroughTarget2Async(String, Object): PrivateScope, Public, HideBySig
+    ToggleItem(String): PrivateScope, Public, HideBySig
+    BeginToggleItem(String, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndToggleItem(IAsyncResult): PrivateScope, Public, HideBySig
+    ToggleItemAsync(String): PrivateScope, Public, HideBySig
+    ToggleItemAsync(String, Object): PrivateScope, Public, HideBySig
+    NavigateDocumentMap(String): PrivateScope, Public, HideBySig
+    BeginNavigateDocumentMap(String, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndNavigateDocumentMap(IAsyncResult): PrivateScope, Public, HideBySig
+    NavigateDocumentMapAsync(String): PrivateScope, Public, HideBySig
+    NavigateDocumentMapAsync(String, Object): PrivateScope, Public, HideBySig
+    NavigateBookmark(String, String&(Out)): PrivateScope, Public, HideBySig
+    BeginNavigateBookmark(String, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndNavigateBookmark(IAsyncResult, String&(Out)): PrivateScope, Public, HideBySig
+    NavigateBookmarkAsync(String): PrivateScope, Public, HideBySig
+    NavigateBookmarkAsync(String, Object): PrivateScope, Public, HideBySig
+    FindString(Int32, Int32, String): PrivateScope, Public, HideBySig
+    BeginFindString(Int32, Int32, String, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndFindString(IAsyncResult): PrivateScope, Public, HideBySig
+    FindStringAsync(Int32, Int32, String): PrivateScope, Public, HideBySig
+    FindStringAsync(Int32, Int32, String, Object): PrivateScope, Public, HideBySig
+    Sort(String, SortDirectionEnum, Boolean, String&(Out), Int32&(Out)): PrivateScope, Public, HideBySig
+    BeginSort(String, SortDirectionEnum, Boolean, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndSort(IAsyncResult, String&(Out), Int32&(Out)): PrivateScope, Public, HideBySig
+    SortAsync(String, SortDirectionEnum, Boolean): PrivateScope, Public, HideBySig
+    SortAsync(String, SortDirectionEnum, Boolean, Object): PrivateScope, Public, HideBySig
+    Sort2(String, SortDirectionEnum, Boolean, PageCountMode, String&(Out), ExecutionInfo2&(Out)): PrivateScope, Public, HideBySig
+    BeginSort2(String, SortDirectionEnum, Boolean, PageCountMode, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndSort2(IAsyncResult, String&(Out), ExecutionInfo2&(Out)): PrivateScope, Public, HideBySig
+    Sort2Async(String, SortDirectionEnum, Boolean, PageCountMode): PrivateScope, Public, HideBySig
+    Sort2Async(String, SortDirectionEnum, Boolean, PageCountMode, Object): PrivateScope, Public, HideBySig
+    GetRenderResource(String, String, String&(Out)): PrivateScope, Public, HideBySig
+    BeginGetRenderResource(String, String, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndGetRenderResource(IAsyncResult, String&(Out)): PrivateScope, Public, HideBySig
+    GetRenderResourceAsync(String, String): PrivateScope, Public, HideBySig
+    GetRenderResourceAsync(String, String, Object): PrivateScope, Public, HideBySig
+    ListRenderingExtensions(): PrivateScope, Public, HideBySig
+    BeginListRenderingExtensions(AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndListRenderingExtensions(IAsyncResult): PrivateScope, Public, HideBySig
+    ListRenderingExtensionsAsync(): PrivateScope, Public, HideBySig
+    ListRenderingExtensionsAsync(Object): PrivateScope, Public, HideBySig
+    LogonUser(String, String, String): PrivateScope, Public, HideBySig
+    BeginLogonUser(String, String, String, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndLogonUser(IAsyncResult): PrivateScope, Public, HideBySig
+    LogonUserAsync(String, String, String): PrivateScope, Public, HideBySig
+    LogonUserAsync(String, String, String, Object): PrivateScope, Public, HideBySig
+    Logoff(): PrivateScope, Public, HideBySig
+    BeginLogoff(AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndLogoff(IAsyncResult): PrivateScope, Public, HideBySig
+    LogoffAsync(): PrivateScope, Public, HideBySig
+    LogoffAsync(Object): PrivateScope, Public, HideBySig
+    CancelAsync(Object): PrivateScope, Public, HideBySig
+    LoadReportDefinition(Byte[], Warning[]&(Out)): PrivateScope, Public, HideBySig
+    BeginLoadReportDefinition(Byte[], AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndLoadReportDefinition(IAsyncResult, Warning[]&(Out)): PrivateScope, Public, HideBySig
+    LoadReportDefinitionAsync(Byte[]): PrivateScope, Public, HideBySig
+    LoadReportDefinitionAsync(Byte[], Object): PrivateScope, Public, HideBySig
+    LoadReportDefinition2(Byte[], Warning[]&(Out)): PrivateScope, Public, HideBySig
+    BeginLoadReportDefinition2(Byte[], AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndLoadReportDefinition2(IAsyncResult, Warning[]&(Out)): PrivateScope, Public, HideBySig
+    LoadReportDefinition2Async(Byte[]): PrivateScope, Public, HideBySig
+    LoadReportDefinition2Async(Byte[], Object): PrivateScope, Public, HideBySig
+    SetExecutionCredentials(DataSourceCredentials[]): PrivateScope, Public, HideBySig
+    BeginSetExecutionCredentials(DataSourceCredentials[], AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndSetExecutionCredentials(IAsyncResult): PrivateScope, Public, HideBySig
+    SetExecutionCredentialsAsync(DataSourceCredentials[]): PrivateScope, Public, HideBySig
+    SetExecutionCredentialsAsync(DataSourceCredentials[], Object): PrivateScope, Public, HideBySig
+    SetExecutionCredentials2(DataSourceCredentials[]): PrivateScope, Public, HideBySig
+    BeginSetExecutionCredentials2(DataSourceCredentials[], AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndSetExecutionCredentials2(IAsyncResult): PrivateScope, Public, HideBySig
+    SetExecutionCredentials2Async(DataSourceCredentials[]): PrivateScope, Public, HideBySig
+    SetExecutionCredentials2Async(DataSourceCredentials[], Object): PrivateScope, Public, HideBySig
+    SetExecutionParameters(ParameterValue[], String): PrivateScope, Public, HideBySig
+    BeginSetExecutionParameters(ParameterValue[], String, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndSetExecutionParameters(IAsyncResult): PrivateScope, Public, HideBySig
+    SetExecutionParametersAsync(ParameterValue[], String): PrivateScope, Public, HideBySig
+    SetExecutionParametersAsync(ParameterValue[], String, Object): PrivateScope, Public, HideBySig
+    SetExecutionParameters2(ParameterValue[], String): PrivateScope, Public, HideBySig
+    BeginSetExecutionParameters2(ParameterValue[], String, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndSetExecutionParameters2(IAsyncResult): PrivateScope, Public, HideBySig
+    SetExecutionParameters2Async(ParameterValue[], String): PrivateScope, Public, HideBySig
+    SetExecutionParameters2Async(ParameterValue[], String, Object): PrivateScope, Public, HideBySig
+    ResetExecution(): PrivateScope, Public, HideBySig
+    BeginResetExecution(AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndResetExecution(IAsyncResult): PrivateScope, Public, HideBySig
+    ResetExecutionAsync(): PrivateScope, Public, HideBySig
+    ResetExecutionAsync(Object): PrivateScope, Public, HideBySig
+    ResetExecution2(): PrivateScope, Public, HideBySig
+    BeginResetExecution2(AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndResetExecution2(IAsyncResult): PrivateScope, Public, HideBySig
+    ResetExecution2Async(): PrivateScope, Public, HideBySig
+    ResetExecution2Async(Object): PrivateScope, Public, HideBySig
+    Render(String, String, String&(Out), String&(Out), String&(Out), Warning[]&(Out), String[]&(Out)): PrivateScope, Public, HideBySig
+    BeginRender(String, String, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndRender(IAsyncResult, String&(Out), String&(Out), String&(Out), Warning[]&(Out), String[]&(Out)): PrivateScope, Public, HideBySig
+    RenderAsync(String, String): PrivateScope, Public, HideBySig
+    RenderAsync(String, String, Object): PrivateScope, Public, HideBySig
+    Render2(String, String, PageCountMode, String&(Out), String&(Out), String&(Out), Warning[]&(Out), String[]&(Out)): PrivateScope, Public, HideBySig
+    BeginRender2(String, String, PageCountMode, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndRender2(IAsyncResult, String&(Out), String&(Out), String&(Out), Warning[]&(Out), String[]&(Out)): PrivateScope, Public, HideBySig
+    Render2Async(String, String, PageCountMode): PrivateScope, Public, HideBySig
+    Render2Async(String, String, PageCountMode, Object): PrivateScope, Public, HideBySig
+    RenderStream(String, String, String, String&(Out), String&(Out)): PrivateScope, Public, HideBySig
+    BeginRenderStream(String, String, String, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndRenderStream(IAsyncResult, String&(Out), String&(Out)): PrivateScope, Public, HideBySig
+    RenderStreamAsync(String, String, String): PrivateScope, Public, HideBySig
+    RenderStreamAsync(String, String, String, Object): PrivateScope, Public, HideBySig
+    GetExecutionInfo(): PrivateScope, Public, HideBySig
+    BeginGetExecutionInfo(AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndGetExecutionInfo(IAsyncResult): PrivateScope, Public, HideBySig
+    GetExecutionInfoAsync(): PrivateScope, Public, HideBySig
+    GetExecutionInfoAsync(Object): PrivateScope, Public, HideBySig
+    GetExecutionInfo2(): PrivateScope, Public, HideBySig
+    BeginGetExecutionInfo2(AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndGetExecutionInfo2(IAsyncResult): PrivateScope, Public, HideBySig
+    GetExecutionInfo2Async(): PrivateScope, Public, HideBySig
+    GetExecutionInfo2Async(Object): PrivateScope, Public, HideBySig
+    GetDocumentMap(): PrivateScope, Public, HideBySig
+    BeginGetDocumentMap(AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndGetDocumentMap(IAsyncResult): PrivateScope, Public, HideBySig
+    GetDocumentMapAsync(): PrivateScope, Public, HideBySig
+    GetDocumentMapAsync(Object): PrivateScope, Public, HideBySig
+    LoadDrillthroughTarget(String): PrivateScope, Public, HideBySig
+    get_TrustedUserHeaderValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_TrustedUserHeaderValue(TrustedUserHeader): PrivateScope, Public, HideBySig, SpecialName
+    get_PrintControlClsidHeaderValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_PrintControlClsidHeaderValue(PrintControlClsidHeader): PrivateScope, Public, HideBySig, SpecialName
+    get_ServerInfoHeaderValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_ServerInfoHeaderValue(ServerInfoHeader): PrivateScope, Public, HideBySig, SpecialName
+    get_ExecutionHeaderValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExecutionHeaderValue(ExecutionHeader): PrivateScope, Public, HideBySig, SpecialName
+    add_ListSecureMethodsCompleted(ListSecureMethodsCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ListSecureMethodsCompleted(ListSecureMethodsCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_LoadReportCompleted(LoadReportCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_LoadReportCompleted(LoadReportCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_LoadReport2Completed(LoadReport2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_LoadReport2Completed(LoadReport2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_LoadReportDefinitionCompleted(LoadReportDefinitionCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_LoadReportDefinitionCompleted(LoadReportDefinitionCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_LoadReportDefinition2Completed(LoadReportDefinition2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_LoadReportDefinition2Completed(LoadReportDefinition2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_SetExecutionCredentialsCompleted(SetExecutionCredentialsCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SetExecutionCredentialsCompleted(SetExecutionCredentialsCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_SetExecutionCredentials2Completed(SetExecutionCredentials2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SetExecutionCredentials2Completed(SetExecutionCredentials2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_SetExecutionParametersCompleted(SetExecutionParametersCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SetExecutionParametersCompleted(SetExecutionParametersCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_SetExecutionParameters2Completed(SetExecutionParameters2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SetExecutionParameters2Completed(SetExecutionParameters2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ResetExecutionCompleted(ResetExecutionCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ResetExecutionCompleted(ResetExecutionCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ResetExecution2Completed(ResetExecution2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ResetExecution2Completed(ResetExecution2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_RenderCompleted(RenderCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RenderCompleted(RenderCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Render2Completed(Render2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Render2Completed(Render2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_RenderStreamCompleted(RenderStreamCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RenderStreamCompleted(RenderStreamCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_GetExecutionInfoCompleted(GetExecutionInfoCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_GetExecutionInfoCompleted(GetExecutionInfoCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_GetExecutionInfo2Completed(GetExecutionInfo2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_GetExecutionInfo2Completed(GetExecutionInfo2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_GetDocumentMapCompleted(GetDocumentMapCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_GetDocumentMapCompleted(GetDocumentMapCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_LoadDrillthroughTargetCompleted(LoadDrillthroughTargetCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_LoadDrillthroughTargetCompleted(LoadDrillthroughTargetCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_LoadDrillthroughTarget2Completed(LoadDrillthroughTarget2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_LoadDrillthroughTarget2Completed(LoadDrillthroughTarget2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ToggleItemCompleted(ToggleItemCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ToggleItemCompleted(ToggleItemCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_NavigateDocumentMapCompleted(NavigateDocumentMapCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_NavigateDocumentMapCompleted(NavigateDocumentMapCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_NavigateBookmarkCompleted(NavigateBookmarkCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_NavigateBookmarkCompleted(NavigateBookmarkCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_FindStringCompleted(FindStringCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_FindStringCompleted(FindStringCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_SortCompleted(SortCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SortCompleted(SortCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Sort2Completed(Sort2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Sort2Completed(Sort2CompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_GetRenderResourceCompleted(GetRenderResourceCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_GetRenderResourceCompleted(GetRenderResourceCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ListRenderingExtensionsCompleted(ListRenderingExtensionsCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ListRenderingExtensionsCompleted(ListRenderingExtensionsCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_LogonUserCompleted(LogonUserCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_LogonUserCompleted(LogonUserCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_LogoffCompleted(LogoffCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_LogoffCompleted(LogoffCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    ListSecureMethods(): PrivateScope, Public, HideBySig
+    BeginListSecureMethods(AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndListSecureMethods(IAsyncResult): PrivateScope, Public, HideBySig
+    ListSecureMethodsAsync(): PrivateScope, Public, HideBySig
+    ListSecureMethodsAsync(Object): PrivateScope, Public, HideBySig
+    LoadReport(String, String): PrivateScope, Public, HideBySig
+    BeginLoadReport(String, String, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndLoadReport(IAsyncResult): PrivateScope, Public, HideBySig
+    LoadReportAsync(String, String): PrivateScope, Public, HideBySig
+    LoadReportAsync(String, String, Object): PrivateScope, Public, HideBySig
+    LoadReport2(String, String): PrivateScope, Public, HideBySig
+    BeginLoadReport2(String, String, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndLoadReport2(IAsyncResult): PrivateScope, Public, HideBySig
+    LoadReport2Async(String, String): PrivateScope, Public, HideBySig
+    LoadReport2Async(String, String, Object): PrivateScope, Public, HideBySig
+Class Microsoft.Reporting.WinForms.CreateStreamCallback: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String, String, Encoding, String, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(String, String, Encoding, String, Boolean, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct Microsoft.Reporting.WinForms.ProcessingMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.Reporting.WinForms.ProcessingMode Local = 0 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.ProcessingMode Remote = 1 : Public, Static, Literal, HasDefault
+Struct Microsoft.Reporting.WinForms.ZoomMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.Reporting.WinForms.ZoomMode FullPage = 0 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.ZoomMode PageWidth = 1 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.ZoomMode Percent = 2 : Public, Static, Literal, HasDefault
+Struct Microsoft.Reporting.WinForms.Severity: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.Reporting.WinForms.Severity Warning = 0 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.Severity Error = 1 : Public, Static, Literal, HasDefault
+Struct Microsoft.Reporting.WinForms.PageCountMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.Reporting.WinForms.PageCountMode Actual = 0 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.PageCountMode Estimate = 1 : Public, Static, Literal, HasDefault
+Interface Microsoft.Reporting.WinForms.IReportServerCredentials: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    System.Security.Principal.WindowsIdentity ImpersonationUser 'get ' : 
+    System.Net.ICredentials NetworkCredentials 'get ' : 
+  Methods:
+    get_ImpersonationUser(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NetworkCredentials(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetFormsCredentials(Cookie&(Out), String&(Out), String&(Out), String&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Microsoft.Reporting.WinForms.IReportViewerMessages: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    System.String DocumentMapButtonToolTip 'get ' : 
+    System.String ParameterAreaButtonToolTip 'get ' : 
+    System.String FirstPageButtonToolTip 'get ' : 
+    System.String PreviousPageButtonToolTip 'get ' : 
+    System.String CurrentPageTextBoxToolTip 'get ' : 
+    System.String PageOf 'get ' : 
+    System.String NextPageButtonToolTip 'get ' : 
+    System.String LastPageButtonToolTip 'get ' : 
+    System.String BackButtonToolTip 'get ' : 
+    System.String RefreshButtonToolTip 'get ' : 
+    System.String PrintButtonToolTip 'get ' : 
+    System.String ExportButtonToolTip 'get ' : 
+    System.String ZoomControlToolTip 'get ' : 
+    System.String SearchTextBoxToolTip 'get ' : 
+    System.String FindButtonToolTip 'get ' : 
+    System.String FindNextButtonToolTip 'get ' : 
+    System.String ZoomToPageWidth 'get ' : 
+    System.String ZoomToWholePage 'get ' : 
+    System.String FindButtonText 'get ' : 
+    System.String FindNextButtonText 'get ' : 
+    System.String ViewReportButtonText 'get ' : 
+    System.String ProgressText 'get ' : 
+    System.String TextNotFound 'get ' : 
+    System.String NoMoreMatches 'get ' : 
+    System.String ChangeCredentialsText 'get ' : 
+    System.String NullCheckBoxText 'get ' : 
+    System.String NullValueText 'get ' : 
+    System.String TrueValueText 'get ' : 
+    System.String FalseValueText 'get ' : 
+    System.String SelectAValue 'get ' : 
+    System.String UserNamePrompt 'get ' : 
+    System.String PasswordPrompt 'get ' : 
+    System.String SelectAll 'get ' : 
+    System.String PrintLayoutButtonToolTip 'get ' : 
+    System.String PageSetupButtonToolTip 'get ' : 
+    System.String NullCheckBoxToolTip 'get ' : 
+    System.String TotalPagesToolTip 'get ' : 
+    System.String StopButtonToolTip 'get ' : 
+    System.String DocumentMapMenuItemText 'get ' : 
+    System.String BackMenuItemText 'get ' : 
+    System.String RefreshMenuItemText 'get ' : 
+    System.String PrintMenuItemText 'get ' : 
+    System.String PrintLayoutMenuItemText 'get ' : 
+    System.String PageSetupMenuItemText 'get ' : 
+    System.String ExportMenuItemText 'get ' : 
+    System.String StopMenuItemText 'get ' : 
+    System.String ZoomMenuItemText 'get ' : 
+    System.String ViewReportButtonToolTip 'get ' : 
+  Methods:
+    get_DocumentMapButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ParameterAreaButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FirstPageButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PreviousPageButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CurrentPageTextBoxToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PageOf(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NextPageButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LastPageButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BackButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RefreshButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PrintButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ExportButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ZoomControlToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SearchTextBoxToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FindButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FindNextButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ZoomToPageWidth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ZoomToWholePage(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FindButtonText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FindNextButtonText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ViewReportButtonText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ProgressText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TextNotFound(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NoMoreMatches(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ChangeCredentialsText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NullCheckBoxText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NullValueText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TrueValueText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FalseValueText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectAValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_UserNamePrompt(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PasswordPrompt(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PrintLayoutButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PageSetupButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NullCheckBoxToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TotalPagesToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_StopButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DocumentMapMenuItemText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BackMenuItemText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RefreshMenuItemText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PrintMenuItemText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PrintLayoutMenuItemText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PageSetupMenuItemText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ExportMenuItemText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_StopMenuItemText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ZoomMenuItemText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ViewReportButtonToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface Microsoft.Reporting.WinForms.IReportViewerMessages2: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    Microsoft.Reporting.WinForms.IReportViewerMessages
+  Properties:
+    System.String ExportErrorTitle 'get ' : 
+    System.String AllFilesFilter 'get ' : 
+    System.String PromptAreaErrorTitle 'get ' : 
+    System.String StringToolTip 'get ' : 
+    System.String FloatToolTip 'get ' : 
+    System.String IntToolTip 'get ' : 
+    System.String DateToolTip 'get ' : 
+    System.String MessageBoxTitle 'get ' : 
+    System.String ProcessingStopped 'get ' : 
+    System.String HyperlinkErrorTitle 'get ' : 
+  Methods:
+    GetLocalizedNameForRenderingExtension(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ParameterMissingSelectionError(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ParameterMissingValueError(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CredentialMissingUserNameError(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ExportErrorTitle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AllFilesFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PromptAreaErrorTitle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_StringToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FloatToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IntToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DateToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MessageBoxTitle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ProcessingStopped(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HyperlinkErrorTitle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface Microsoft.Reporting.WinForms.IReportViewerMessages3: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    Microsoft.Reporting.WinForms.IReportViewerMessages2
+    Microsoft.Reporting.WinForms.IReportViewerMessages
+  Properties:
+    System.String CancelLinkText 'get ' : 
+    System.String ExportDialogTitle 'get ' : 
+    System.String ExportDialogCancelButton 'get ' : 
+    System.String ExportDialogStatusText 'get ' : 
+    System.String FalseBooleanToolTip 'get ' : 
+    System.String TrueBooleanToolTip 'get ' : 
+  Methods:
+    TotalPages(Int32, PageCountMode): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_CancelLinkText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ExportDialogTitle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ExportDialogCancelButton(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ExportDialogStatusText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FalseBooleanToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TrueBooleanToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class Microsoft.Reporting.WinForms.ReportServerCredentials: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Interfaces:
+    Microsoft.Reporting.WinForms.IReportServerCredentials
+  Properties:
+    System.Security.Principal.WindowsIdentity ImpersonationUser 'get set' : 
+    System.Net.ICredentials NetworkCredentials 'get set' : 
+  Methods:
+    get_ImpersonationUser(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ImpersonationUser(WindowsIdentity): PrivateScope, Public, HideBySig, SpecialName
+    get_NetworkCredentials(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_NetworkCredentials(ICredentials): PrivateScope, Public, HideBySig, SpecialName
+    GetFormsCredentials(Cookie&(Out), String&(Out), String&(Out), String&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SetFormsCredentials(Cookie, String, String, String): PrivateScope, Public, HideBySig
+Class Microsoft.Reporting.WinForms.ReportPageSettings: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  Properties:
+    System.Drawing.Printing.PaperSize PaperSize 'get ' : 
+    System.Drawing.Printing.Margins Margins 'get ' : 
+    Boolean IsLandscape 'get ' : 
+  Methods:
+    get_PaperSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_Margins(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsLandscape(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.SearchState: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  Properties:
+    System.String Text 'get ' : 
+    Int32 StartPage 'get ' : 
+  Methods:
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    get_StartPage(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.ReportParameterCollection: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Collections.ObjectModel.Collection`1[Microsoft.Reporting.WinForms.ReportParameter]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.Reporting.WinForms.ReportParameter Item [System.String] 'get ' : 
+  Methods:
+    get_Item(String): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.ReportParameter: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String[], Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get set' : 
+    System.Collections.Specialized.StringCollection Values 'get ' : 
+    Boolean Visible 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Values(): PrivateScope, Public, HideBySig, SpecialName
+    get_Visible(): PrivateScope, Public, HideBySig, SpecialName
+    set_Visible(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.RenderingExtension: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  Properties:
+    System.String Name 'get ' : 
+    System.String LocalizedName 'get ' : 
+    Boolean Visible 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalizedName(): PrivateScope, Public, HideBySig, SpecialName
+    get_Visible(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Warning: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Properties:
+    System.String Code 'get ' : 
+    System.String Message 'get ' : 
+    System.String ObjectName 'get ' : 
+    System.String ObjectType 'get ' : 
+    Microsoft.Reporting.WinForms.Severity Severity 'get ' : 
+  Methods:
+    get_Code(): PrivateScope, Public, HideBySig, SpecialName
+    get_Message(): PrivateScope, Public, HideBySig, SpecialName
+    get_ObjectName(): PrivateScope, Public, HideBySig, SpecialName
+    get_ObjectType(): PrivateScope, Public, HideBySig, SpecialName
+    get_Severity(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.ReportDataSourceInfo: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  Properties:
+    System.String Name 'get ' : 
+    System.String Prompt 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_Prompt(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.ReportDataSourceInfoCollection: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Collections.ObjectModel.ReadOnlyCollection`1[Microsoft.Reporting.WinForms.ReportDataSourceInfo]
+  Properties:
+    Microsoft.Reporting.WinForms.ReportDataSourceInfo Item [System.String] 'get ' : 
+  Methods:
+    get_Item(String): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.DataSourceCredentialsCollection: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Collections.ObjectModel.Collection`1[Microsoft.Reporting.WinForms.DataSourceCredentials]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.Reporting.WinForms.DataSourceCredentials Item [System.String] 'get ' : 
+  Methods:
+    get_Item(String): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.DataSourceCredentials: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get set' : 
+    System.String UserId 'get set' : 
+    System.String Password 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_UserId(): PrivateScope, Public, HideBySig, SpecialName
+    set_UserId(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Password(): PrivateScope, Public, HideBySig, SpecialName
+    set_Password(String): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.ReportDataSource: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Data.DataTable): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Windows.Forms.BindingSource): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Collections.IEnumerable): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get set' : 
+    System.Object Value 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value(Object): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.SyncList`1[TListType]: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  Type parameter: TListType
+  :System.Collections.ObjectModel.Collection`1[TListType]
+Class Microsoft.Reporting.WinForms.ReportDataSourceCollection: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.SyncList`1[Microsoft.Reporting.WinForms.ReportDataSource]
+  Interfaces:
+    System.Runtime.Serialization.ISerializable
+  Properties:
+    Microsoft.Reporting.WinForms.ReportDataSource Item [System.String] 'get ' : 
+  Methods:
+    get_Item(String): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.DocumentMapNode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Properties:
+    System.String Label 'get ' : 
+    System.String Id 'get ' : 
+    System.Collections.Generic.IList`1[Microsoft.Reporting.WinForms.DocumentMapNode] Children 'get ' : 
+  Methods:
+    get_Label(): PrivateScope, Public, HideBySig, SpecialName
+    get_Id(): PrivateScope, Public, HideBySig, SpecialName
+    get_Children(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.ReportViewerHeaderCollection: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.SyncList`1[System.String]
+Class Microsoft.Reporting.WinForms.ReportViewerCookieCollection: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.SyncList`1[System.Net.Cookie]
+Class Microsoft.Reporting.WinForms.ReportViewerException: AutoLayout, AnsiClass, Class, Public, Abstract, Serializable, HasSecurity, BeforeFieldInit
+  :System.Exception
+Class Microsoft.Reporting.WinForms.MissingParameterException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.ReportViewerException
+Class Microsoft.Reporting.WinForms.MissingDataSourceCredentialsException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.ReportViewerException
+Class Microsoft.Reporting.WinForms.MissingDataSourceException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.ReportViewerException
+Class Microsoft.Reporting.WinForms.ReportServerException: AutoLayout, AnsiClass, Class, Public, Serializable, HasSecurity, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.ReportViewerException
+  Properties:
+    System.String ErrorCode 'get ' : 
+  Methods:
+    GetObjectData(SerializationInfo, StreamingContext): PrivateScope, Public, Virtual, HideBySig, HasSecurity
+    get_ErrorCode(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.LocalProcessingException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.ReportViewerException
+Class Microsoft.Reporting.WinForms.ClientRenderingException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.ReportViewerException
+Class Microsoft.Reporting.WinForms.ReportSecurityException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.ReportViewerException
+Class Microsoft.Reporting.WinForms.MissingEndpointException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.ReportServerException
+Class Microsoft.Reporting.WinForms.SoapVersionMismatchException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.ReportServerException
+Class Microsoft.Reporting.WinForms.MissingReportSourceException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.ReportViewerException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Struct Microsoft.Reporting.WinForms.ParameterDataType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.Reporting.WinForms.ParameterDataType Boolean = 0 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.ParameterDataType DateTime = 1 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.ParameterDataType Float = 2 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.ParameterDataType Integer = 3 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.ParameterDataType String = 4 : Public, Static, Literal, HasDefault
+Struct Microsoft.Reporting.WinForms.ParameterState: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.Reporting.WinForms.ParameterState HasValidValue = 0 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.ParameterState MissingValidValue = 1 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.ParameterState HasOutstandingDependencies = 2 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.ParameterState DynamicValuesUnavailable = 3 : Public, Static, Literal, HasDefault
+Class Microsoft.Reporting.WinForms.ReportParameterInfo: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Properties:
+    System.String Name 'get ' : 
+    Microsoft.Reporting.WinForms.ParameterDataType DataType 'get ' : 
+    Boolean Nullable 'get ' : 
+    Boolean AllowBlank 'get ' : 
+    Boolean MultiValue 'get ' : 
+    Boolean IsQueryParameter 'get ' : 
+    System.String Prompt 'get ' : 
+    Boolean PromptUser 'get ' : 
+    Microsoft.Reporting.WinForms.ReportParameterInfoCollection Dependencies 'get ' : 
+    Microsoft.Reporting.WinForms.ReportParameterInfoCollection Dependents 'get ' : 
+    Boolean AreValidValuesQueryBased 'get ' : 
+    System.Collections.Generic.IList`1[Microsoft.Reporting.WinForms.ValidValue] ValidValues 'get ' : 
+    Boolean AreDefaultValuesQueryBased 'get ' : 
+    System.Collections.Generic.IList`1[System.String] Values 'get ' : 
+    Microsoft.Reporting.WinForms.ParameterState State 'get ' : 
+    System.String ErrorMessage 'get ' : 
+    Boolean Visible 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_DataType(): PrivateScope, Public, HideBySig, SpecialName
+    get_Nullable(): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowBlank(): PrivateScope, Public, HideBySig, SpecialName
+    get_MultiValue(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsQueryParameter(): PrivateScope, Public, HideBySig, SpecialName
+    get_Prompt(): PrivateScope, Public, HideBySig, SpecialName
+    get_PromptUser(): PrivateScope, Public, HideBySig, SpecialName
+    get_Dependencies(): PrivateScope, Public, HideBySig, SpecialName
+    get_Dependents(): PrivateScope, Public, HideBySig, SpecialName
+    get_AreValidValuesQueryBased(): PrivateScope, Public, HideBySig, SpecialName
+    get_ValidValues(): PrivateScope, Public, HideBySig, SpecialName
+    get_AreDefaultValuesQueryBased(): PrivateScope, Public, HideBySig, SpecialName
+    get_Values(): PrivateScope, Public, HideBySig, SpecialName
+    get_State(): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorMessage(): PrivateScope, Public, HideBySig, SpecialName
+    get_Visible(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.ReportParameterInfoCollection: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Collections.ObjectModel.ReadOnlyCollection`1[Microsoft.Reporting.WinForms.ReportParameterInfo]
+  Properties:
+    Microsoft.Reporting.WinForms.ReportParameterInfo Item [System.String] 'get ' : 
+  Methods:
+    get_Item(String): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.ValidValue: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Properties:
+    System.String Label 'get ' : 
+    System.String Value 'get ' : 
+  Methods:
+    get_Label(): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.PageNavigationEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, PageNavigationEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, PageNavigationEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.PageNavigationEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 NewPage 'get ' : 
+  Methods:
+    get_NewPage(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.SearchEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, SearchEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, SearchEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.SearchEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+    Void .ctor(System.String, Int32, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String SearchString 'get ' : 
+    Int32 StartPage 'get ' : 
+    Boolean IsFindNext 'get ' : 
+  Methods:
+    get_SearchString(): PrivateScope, Public, HideBySig, SpecialName
+    get_StartPage(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsFindNext(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.DocumentMapNavigationEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, DocumentMapNavigationEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, DocumentMapNavigationEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.DocumentMapNavigationEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String DocumentMapId 'get ' : 
+  Methods:
+    get_DocumentMapId(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.BookmarkNavigationEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, BookmarkNavigationEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, BookmarkNavigationEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.BookmarkNavigationEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String BookmarkId 'get ' : 
+  Methods:
+    get_BookmarkId(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.DrillthroughEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, DrillthroughEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, DrillthroughEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.DrillthroughEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+    Void .ctor(System.String, Microsoft.Reporting.WinForms.Report): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String ReportPath 'get ' : 
+    Microsoft.Reporting.WinForms.Report Report 'get ' : 
+  Methods:
+    get_ReportPath(): PrivateScope, Public, HideBySig, SpecialName
+    get_Report(): PrivateScope, Public, HideBySig, SpecialName
+Struct Microsoft.Reporting.WinForms.SortOrder: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.Reporting.WinForms.SortOrder Ascending = 0 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.SortOrder Descending = 1 : Public, Static, Literal, HasDefault
+Class Microsoft.Reporting.WinForms.SortEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, SortEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, SortEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.SortEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+    Void .ctor(System.String, Microsoft.Reporting.WinForms.SortOrder, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String SortId 'get ' : 
+    Microsoft.Reporting.WinForms.SortOrder SortDirection 'get ' : 
+    Boolean ClearSort 'get ' : 
+  Methods:
+    get_SortId(): PrivateScope, Public, HideBySig, SpecialName
+    get_SortDirection(): PrivateScope, Public, HideBySig, SpecialName
+    get_ClearSort(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.SubreportProcessingEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, SubreportProcessingEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, SubreportProcessingEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.SubreportProcessingEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.EventArgs
+  Properties:
+    System.String ReportPath 'get ' : 
+    Microsoft.Reporting.WinForms.ReportParameterInfoCollection Parameters 'get ' : 
+    System.Collections.Generic.IList`1[System.String] DataSourceNames 'get ' : 
+    Microsoft.Reporting.WinForms.ReportDataSourceCollection DataSources 'get ' : 
+  Methods:
+    get_ReportPath(): PrivateScope, Public, HideBySig, SpecialName
+    get_Parameters(): PrivateScope, Public, HideBySig, SpecialName
+    get_DataSourceNames(): PrivateScope, Public, HideBySig, SpecialName
+    get_DataSources(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.ReportErrorEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ReportErrorEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ReportErrorEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.ReportErrorEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.EventArgs
+  Properties:
+    System.Exception Exception 'get ' : 
+    Boolean Handled 'get set' : 
+  Methods:
+    get_Exception(): PrivateScope, Public, HideBySig, SpecialName
+    get_Handled(): PrivateScope, Public, HideBySig, SpecialName
+    set_Handled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.BackEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, BackEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, BackEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.BackEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+    Void .ctor(Microsoft.Reporting.WinForms.Report): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.Reporting.WinForms.Report ParentReport 'get ' : 
+  Methods:
+    get_ParentReport(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.RenderingCompleteEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, RenderingCompleteEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, RenderingCompleteEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.RenderingCompleteEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.EventArgs
+  Properties:
+    System.Collections.Generic.IList`1[Microsoft.Reporting.WinForms.Warning] Warnings 'get ' : 
+    System.Exception Exception 'get ' : 
+  Methods:
+    get_Warnings(): PrivateScope, Public, HideBySig, SpecialName
+    get_Exception(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.HyperlinkEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, HyperlinkEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, HyperlinkEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.HyperlinkEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+  Properties:
+    System.String Hyperlink 'get ' : 
+  Methods:
+    get_Hyperlink(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.ExportEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ReportExportEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ReportExportEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.ReportExportEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+    Void .ctor(Microsoft.Reporting.WinForms.RenderingExtension): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.Reporting.WinForms.RenderingExtension Extension 'get ' : 
+    System.String DeviceInfo 'get set' : 
+  Methods:
+    get_Extension(): PrivateScope, Public, HideBySig, SpecialName
+    get_DeviceInfo(): PrivateScope, Public, HideBySig, SpecialName
+    set_DeviceInfo(String): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.ReportPrintEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ReportPrintEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ReportPrintEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.ReportPrintEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+  Properties:
+    System.Drawing.Printing.PrinterSettings PrinterSettings 'get set' : 
+  Methods:
+    get_PrinterSettings(): PrivateScope, Public, HideBySig, SpecialName
+    set_PrinterSettings(PrinterSettings): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.ZoomChangedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ZoomChangeEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ZoomChangeEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.ZoomChangeEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+    Void .ctor(Microsoft.Reporting.WinForms.ZoomMode, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 ZoomPercent 'get ' : 
+    Microsoft.Reporting.WinForms.ZoomMode ZoomMode 'get ' : 
+  Methods:
+    get_ZoomPercent(): PrivateScope, Public, HideBySig, SpecialName
+    get_ZoomMode(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.ReportCredentialsEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ReportCredentialsEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ReportCredentialsEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.ReportCredentialsEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.DataSourceCredentialsCollection Credentials 'get ' : 
+  Methods:
+    get_Credentials(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.ReportParametersEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ReportParametersEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ReportParametersEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.ReportParametersEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.ReportParameterCollection Parameters 'get ' : 
+    Boolean AutoSubmit 'get ' : 
+  Methods:
+    get_Parameters(): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoSubmit(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.ReportTypeConverter: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.ExpandableObjectConverter
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ConvertTo(ITypeDescriptorContext, CultureInfo, Object, Type): PrivateScope, Public, Virtual, HideBySig
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ServerInfoHeader: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Web.Services.Protocols.SoapHeader
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String ReportServerVersionNumber 'get set' : 
+    System.String ReportServerEdition 'get set' : 
+    System.String ReportServerVersion 'get set' : 
+    System.String ReportServerDateTime 'get set' : 
+    System.Xml.XmlAttribute[] AnyAttr 'get set' : 
+  Methods:
+    get_ReportServerVersionNumber(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReportServerVersionNumber(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ReportServerEdition(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReportServerEdition(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ReportServerVersion(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReportServerVersion(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ReportServerDateTime(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReportServerDateTime(String): PrivateScope, Public, HideBySig, SpecialName
+    get_AnyAttr(): PrivateScope, Public, HideBySig, SpecialName
+    set_AnyAttr(XmlAttribute[]): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.PrintControlClsidHeader: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Web.Services.Protocols.SoapHeader
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Clsid32 'get set' : 
+    System.String Clsid64 'get set' : 
+    System.Xml.XmlAttribute[] AnyAttr 'get set' : 
+  Methods:
+    get_Clsid32(): PrivateScope, Public, HideBySig, SpecialName
+    set_Clsid32(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Clsid64(): PrivateScope, Public, HideBySig, SpecialName
+    set_Clsid64(String): PrivateScope, Public, HideBySig, SpecialName
+    get_AnyAttr(): PrivateScope, Public, HideBySig, SpecialName
+    set_AnyAttr(XmlAttribute[]): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.Extension: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExtensionTypeEnum ExtensionType 'get set' : 
+    System.String Name 'get set' : 
+    System.String LocalizedName 'get set' : 
+    Boolean Visible 'get set' : 
+    Boolean IsModelGenerationSupported 'get set' : 
+  Methods:
+    get_ExtensionType(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExtensionType(ExtensionTypeEnum): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalizedName(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalizedName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Visible(): PrivateScope, Public, HideBySig, SpecialName
+    set_Visible(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_IsModelGenerationSupported(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsModelGenerationSupported(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Struct Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExtensionTypeEnum: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExtensionTypeEnum Delivery = 0 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExtensionTypeEnum Render = 1 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExtensionTypeEnum Data = 2 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExtensionTypeEnum All = 3 : Public, Static, Literal, HasDefault
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.DocumentMapNode: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Label 'get set' : 
+    System.String UniqueName 'get set' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.DocumentMapNode[] Children 'get set' : 
+  Methods:
+    get_Label(): PrivateScope, Public, HideBySig, SpecialName
+    set_Label(String): PrivateScope, Public, HideBySig, SpecialName
+    get_UniqueName(): PrivateScope, Public, HideBySig, SpecialName
+    set_UniqueName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Children(): PrivateScope, Public, HideBySig, SpecialName
+    set_Children(DocumentMapNode[]): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterValueOrFieldReference: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterValue: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterValueOrFieldReference
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get set' : 
+    System.String Value 'get set' : 
+    System.String Label 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Label(): PrivateScope, Public, HideBySig, SpecialName
+    set_Label(String): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.DataSourceCredentials: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String DataSourceName 'get set' : 
+    System.String UserName 'get set' : 
+    System.String Password 'get set' : 
+  Methods:
+    get_DataSourceName(): PrivateScope, Public, HideBySig, SpecialName
+    set_DataSourceName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_UserName(): PrivateScope, Public, HideBySig, SpecialName
+    set_UserName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Password(): PrivateScope, Public, HideBySig, SpecialName
+    set_Password(String): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.Warning: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Code 'get set' : 
+    System.String Severity 'get set' : 
+    System.String ObjectName 'get set' : 
+    System.String ObjectType 'get set' : 
+    System.String Message 'get set' : 
+  Methods:
+    get_Code(): PrivateScope, Public, HideBySig, SpecialName
+    set_Code(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Severity(): PrivateScope, Public, HideBySig, SpecialName
+    set_Severity(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ObjectName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ObjectName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ObjectType(): PrivateScope, Public, HideBySig, SpecialName
+    set_ObjectType(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Message(): PrivateScope, Public, HideBySig, SpecialName
+    set_Message(String): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ReportMargins: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double Top 'get set' : 
+    Double Bottom 'get set' : 
+    Double Left 'get set' : 
+    Double Right 'get set' : 
+  Methods:
+    get_Top(): PrivateScope, Public, HideBySig, SpecialName
+    set_Top(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Bottom(): PrivateScope, Public, HideBySig, SpecialName
+    set_Bottom(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Left(): PrivateScope, Public, HideBySig, SpecialName
+    set_Left(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Right(): PrivateScope, Public, HideBySig, SpecialName
+    set_Right(Double): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ReportPaperSize: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double Height 'get set' : 
+    Double Width 'get set' : 
+  Methods:
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    set_Height(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    set_Width(Double): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.PageSettings: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ReportPaperSize PaperSize 'get set' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ReportMargins Margins 'get set' : 
+  Methods:
+    get_PaperSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_PaperSize(ReportPaperSize): PrivateScope, Public, HideBySig, SpecialName
+    get_Margins(): PrivateScope, Public, HideBySig, SpecialName
+    set_Margins(ReportMargins): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.DataSourcePrompt: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get set' : 
+    System.String DataSourceID 'get set' : 
+    System.String Prompt 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_DataSourceID(): PrivateScope, Public, HideBySig, SpecialName
+    set_DataSourceID(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Prompt(): PrivateScope, Public, HideBySig, SpecialName
+    set_Prompt(String): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ValidValue: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Label 'get set' : 
+    System.String Value 'get set' : 
+  Methods:
+    get_Label(): PrivateScope, Public, HideBySig, SpecialName
+    set_Label(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value(String): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ReportParameter: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get set' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterTypeEnum Type 'get set' : 
+    Boolean TypeSpecified 'get set' : 
+    Boolean Nullable 'get set' : 
+    Boolean NullableSpecified 'get set' : 
+    Boolean AllowBlank 'get set' : 
+    Boolean AllowBlankSpecified 'get set' : 
+    Boolean MultiValue 'get set' : 
+    Boolean MultiValueSpecified 'get set' : 
+    Boolean QueryParameter 'get set' : 
+    Boolean QueryParameterSpecified 'get set' : 
+    System.String Prompt 'get set' : 
+    Boolean PromptUser 'get set' : 
+    Boolean PromptUserSpecified 'get set' : 
+    System.String[] Dependencies 'get set' : 
+    Boolean ValidValuesQueryBased 'get set' : 
+    Boolean ValidValuesQueryBasedSpecified 'get set' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ValidValue[] ValidValues 'get set' : 
+    Boolean DefaultValuesQueryBased 'get set' : 
+    Boolean DefaultValuesQueryBasedSpecified 'get set' : 
+    System.String[] DefaultValues 'get set' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterStateEnum State 'get set' : 
+    Boolean StateSpecified 'get set' : 
+    System.String ErrorMessage 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Type(): PrivateScope, Public, HideBySig, SpecialName
+    set_Type(ParameterTypeEnum): PrivateScope, Public, HideBySig, SpecialName
+    get_TypeSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_TypeSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Nullable(): PrivateScope, Public, HideBySig, SpecialName
+    set_Nullable(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_NullableSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_NullableSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowBlank(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowBlank(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowBlankSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowBlankSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MultiValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_MultiValue(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MultiValueSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_MultiValueSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_QueryParameter(): PrivateScope, Public, HideBySig, SpecialName
+    set_QueryParameter(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_QueryParameterSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_QueryParameterSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Prompt(): PrivateScope, Public, HideBySig, SpecialName
+    set_Prompt(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PromptUser(): PrivateScope, Public, HideBySig, SpecialName
+    set_PromptUser(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_PromptUserSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_PromptUserSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Dependencies(): PrivateScope, Public, HideBySig, SpecialName
+    set_Dependencies(String[]): PrivateScope, Public, HideBySig, SpecialName
+    get_ValidValuesQueryBased(): PrivateScope, Public, HideBySig, SpecialName
+    set_ValidValuesQueryBased(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ValidValuesQueryBasedSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_ValidValuesQueryBasedSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ValidValues(): PrivateScope, Public, HideBySig, SpecialName
+    set_ValidValues(ValidValue[]): PrivateScope, Public, HideBySig, SpecialName
+    get_DefaultValuesQueryBased(): PrivateScope, Public, HideBySig, SpecialName
+    set_DefaultValuesQueryBased(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_DefaultValuesQueryBasedSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_DefaultValuesQueryBasedSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_DefaultValues(): PrivateScope, Public, HideBySig, SpecialName
+    set_DefaultValues(String[]): PrivateScope, Public, HideBySig, SpecialName
+    get_State(): PrivateScope, Public, HideBySig, SpecialName
+    set_State(ParameterStateEnum): PrivateScope, Public, HideBySig, SpecialName
+    get_StateSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_StateSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorMessage(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorMessage(String): PrivateScope, Public, HideBySig, SpecialName
+Struct Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterTypeEnum: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterTypeEnum Boolean = 0 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterTypeEnum DateTime = 1 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterTypeEnum Integer = 2 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterTypeEnum Float = 3 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterTypeEnum String = 4 : Public, Static, Literal, HasDefault
+Struct Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterStateEnum: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterStateEnum HasValidValue = 0 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterStateEnum MissingValidValue = 1 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterStateEnum HasOutstandingDependencies = 2 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ParameterStateEnum DynamicValuesUnavailable = 3 : Public, Static, Literal, HasDefault
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean HasSnapshot 'get set' : 
+    Boolean NeedsProcessing 'get set' : 
+    Boolean AllowQueryExecution 'get set' : 
+    Boolean CredentialsRequired 'get set' : 
+    Boolean ParametersRequired 'get set' : 
+    System.DateTime ExpirationDateTime 'get set' : 
+    System.DateTime ExecutionDateTime 'get set' : 
+    Int32 NumPages 'get set' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ReportParameter[] Parameters 'get set' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.DataSourcePrompt[] DataSourcePrompts 'get set' : 
+    Boolean HasDocumentMap 'get set' : 
+    System.String ExecutionID 'get set' : 
+    System.String ReportPath 'get set' : 
+    System.String HistoryID 'get set' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.PageSettings ReportPageSettings 'get set' : 
+    Int32 AutoRefreshInterval 'get set' : 
+  Methods:
+    get_HasSnapshot(): PrivateScope, Public, HideBySig, SpecialName
+    set_HasSnapshot(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_NeedsProcessing(): PrivateScope, Public, HideBySig, SpecialName
+    set_NeedsProcessing(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowQueryExecution(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowQueryExecution(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_CredentialsRequired(): PrivateScope, Public, HideBySig, SpecialName
+    set_CredentialsRequired(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ParametersRequired(): PrivateScope, Public, HideBySig, SpecialName
+    set_ParametersRequired(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ExpirationDateTime(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExpirationDateTime(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_ExecutionDateTime(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExecutionDateTime(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_NumPages(): PrivateScope, Public, HideBySig, SpecialName
+    set_NumPages(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Parameters(): PrivateScope, Public, HideBySig, SpecialName
+    set_Parameters(ReportParameter[]): PrivateScope, Public, HideBySig, SpecialName
+    get_DataSourcePrompts(): PrivateScope, Public, HideBySig, SpecialName
+    set_DataSourcePrompts(DataSourcePrompt[]): PrivateScope, Public, HideBySig, SpecialName
+    get_HasDocumentMap(): PrivateScope, Public, HideBySig, SpecialName
+    set_HasDocumentMap(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ExecutionID(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExecutionID(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ReportPath(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReportPath(String): PrivateScope, Public, HideBySig, SpecialName
+    get_HistoryID(): PrivateScope, Public, HideBySig, SpecialName
+    set_HistoryID(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ReportPageSettings(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReportPageSettings(PageSettings): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoRefreshInterval(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoRefreshInterval(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo2: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.PageCountMode PageCountMode 'get set' : 
+  Methods:
+    get_PageCountMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_PageCountMode(PageCountMode): PrivateScope, Public, HideBySig, SpecialName
+Struct Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.PageCountMode: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.PageCountMode Actual = 0 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.PageCountMode Estimate = 1 : Public, Static, Literal, HasDefault
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionHeader: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Web.Services.Protocols.SoapHeader
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String ExecutionID 'get set' : 
+    System.Xml.XmlAttribute[] AnyAttr 'get set' : 
+  Methods:
+    get_ExecutionID(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExecutionID(String): PrivateScope, Public, HideBySig, SpecialName
+    get_AnyAttr(): PrivateScope, Public, HideBySig, SpecialName
+    set_AnyAttr(XmlAttribute[]): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.TrustedUserHeader: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Web.Services.Protocols.SoapHeader
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String UserName 'get set' : 
+    Byte[] UserToken 'get set' : 
+    System.Xml.XmlAttribute[] AnyAttr 'get set' : 
+  Methods:
+    get_UserName(): PrivateScope, Public, HideBySig, SpecialName
+    set_UserName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_UserToken(): PrivateScope, Public, HideBySig, SpecialName
+    set_UserToken(Byte[]): PrivateScope, Public, HideBySig, SpecialName
+    get_AnyAttr(): PrivateScope, Public, HideBySig, SpecialName
+    set_AnyAttr(XmlAttribute[]): PrivateScope, Public, HideBySig, SpecialName
+Struct Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SortDirectionEnum: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SortDirectionEnum None = 0 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SortDirectionEnum Ascending = 1 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SortDirectionEnum Descending = 2 : Public, Static, Literal, HasDefault
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ListSecureMethodsCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ListSecureMethodsCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ListSecureMethodsCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ListSecureMethodsCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    System.String[] Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadReportCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, LoadReportCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, LoadReportCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadReportCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadReport2CompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, LoadReport2CompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, LoadReport2CompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadReport2CompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo2 Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadReportDefinitionCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, LoadReportDefinitionCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, LoadReportDefinitionCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadReportDefinitionCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo Result 'get ' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.Warning[] warnings 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+    get_warnings(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadReportDefinition2CompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, LoadReportDefinition2CompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, LoadReportDefinition2CompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadReportDefinition2CompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo2 Result 'get ' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.Warning[] warnings 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+    get_warnings(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SetExecutionCredentialsCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, SetExecutionCredentialsCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, SetExecutionCredentialsCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SetExecutionCredentialsCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SetExecutionCredentials2CompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, SetExecutionCredentials2CompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, SetExecutionCredentials2CompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SetExecutionCredentials2CompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo2 Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SetExecutionParametersCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, SetExecutionParametersCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, SetExecutionParametersCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SetExecutionParametersCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SetExecutionParameters2CompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, SetExecutionParameters2CompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, SetExecutionParameters2CompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SetExecutionParameters2CompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo2 Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ResetExecutionCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ResetExecutionCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ResetExecutionCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ResetExecutionCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ResetExecution2CompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ResetExecution2CompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ResetExecution2CompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ResetExecution2CompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo2 Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.RenderCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, RenderCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, RenderCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.RenderCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Byte[] Result 'get ' : 
+    System.String Extension 'get ' : 
+    System.String MimeType 'get ' : 
+    System.String Encoding 'get ' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.Warning[] Warnings 'get ' : 
+    System.String[] StreamIds 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+    get_Extension(): PrivateScope, Public, HideBySig, SpecialName
+    get_MimeType(): PrivateScope, Public, HideBySig, SpecialName
+    get_Encoding(): PrivateScope, Public, HideBySig, SpecialName
+    get_Warnings(): PrivateScope, Public, HideBySig, SpecialName
+    get_StreamIds(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.Render2CompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, Render2CompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, Render2CompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.Render2CompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Byte[] Result 'get ' : 
+    System.String Extension 'get ' : 
+    System.String MimeType 'get ' : 
+    System.String Encoding 'get ' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.Warning[] Warnings 'get ' : 
+    System.String[] StreamIds 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+    get_Extension(): PrivateScope, Public, HideBySig, SpecialName
+    get_MimeType(): PrivateScope, Public, HideBySig, SpecialName
+    get_Encoding(): PrivateScope, Public, HideBySig, SpecialName
+    get_Warnings(): PrivateScope, Public, HideBySig, SpecialName
+    get_StreamIds(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.RenderStreamCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, RenderStreamCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, RenderStreamCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.RenderStreamCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Byte[] Result 'get ' : 
+    System.String Encoding 'get ' : 
+    System.String MimeType 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+    get_Encoding(): PrivateScope, Public, HideBySig, SpecialName
+    get_MimeType(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.GetExecutionInfoCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, GetExecutionInfoCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, GetExecutionInfoCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.GetExecutionInfoCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.GetExecutionInfo2CompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, GetExecutionInfo2CompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, GetExecutionInfo2CompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.GetExecutionInfo2CompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo2 Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.GetDocumentMapCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, GetDocumentMapCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, GetDocumentMapCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.GetDocumentMapCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.DocumentMapNode Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadDrillthroughTargetCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, LoadDrillthroughTargetCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, LoadDrillthroughTargetCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadDrillthroughTargetCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadDrillthroughTarget2CompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, LoadDrillthroughTarget2CompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, LoadDrillthroughTarget2CompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LoadDrillthroughTarget2CompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo2 Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ToggleItemCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ToggleItemCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ToggleItemCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ToggleItemCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Boolean Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.NavigateDocumentMapCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, NavigateDocumentMapCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, NavigateDocumentMapCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.NavigateDocumentMapCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Int32 Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.NavigateBookmarkCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, NavigateBookmarkCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, NavigateBookmarkCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.NavigateBookmarkCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Int32 Result 'get ' : 
+    System.String UniqueName 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+    get_UniqueName(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.FindStringCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, FindStringCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, FindStringCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.FindStringCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Int32 Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SortCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, SortCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, SortCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.SortCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Int32 Result 'get ' : 
+    System.String ReportItem 'get ' : 
+    Int32 NumPages 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+    get_ReportItem(): PrivateScope, Public, HideBySig, SpecialName
+    get_NumPages(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.Sort2CompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, Sort2CompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, Sort2CompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.Sort2CompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Int32 Result 'get ' : 
+    System.String ReportItem 'get ' : 
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ExecutionInfo2 ExecutionInfo 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+    get_ReportItem(): PrivateScope, Public, HideBySig, SpecialName
+    get_ExecutionInfo(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.GetRenderResourceCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, GetRenderResourceCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, GetRenderResourceCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.GetRenderResourceCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Byte[] Result 'get ' : 
+    System.String MimeType 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+    get_MimeType(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ListRenderingExtensionsCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ListRenderingExtensionsCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ListRenderingExtensionsCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.ListRenderingExtensionsCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.Extension[] Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LogonUserCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, AsyncCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, AsyncCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.LogoffCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, AsyncCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, AsyncCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.Reporting.WinForms.ReportViewer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.Reporting.WinForms.IRenderable
+  Fields:
+    Int32 MaximumPageCount = 2147483647 : Public, Static, Literal, HasDefault
+  Properties:
+    Microsoft.Reporting.WinForms.ServerReport ServerReport 'get ' : 
+    Microsoft.Reporting.WinForms.LocalReport LocalReport 'get ' : 
+    System.Windows.Forms.BorderStyle BorderStyle 'get set' : 
+    System.Drawing.Color BackColor 'get set' : 
+    System.Drawing.Image BackgroundImage 'get set' : 
+    System.Windows.Forms.ImageLayout BackgroundImageLayout 'get set' : 
+    Int32 DocumentMapWidth 'get set' : 
+    Boolean IsDocumentMapWidthFixed 'get set' : 
+    Boolean DocumentMapCollapsed 'get set' : 
+    Boolean PromptAreaCollapsed 'get set' : 
+    Boolean ShowParameterPrompts 'get set' : 
+    Boolean ShowCredentialPrompts 'get set' : 
+    Boolean ShowToolBar 'get set' : 
+    Boolean ShowProgress 'get set' : 
+    Int32 WaitControlDisplayAfter 'get set' : 
+    Boolean ShowContextMenu 'get set' : 
+    Boolean ShowDocumentMapButton 'get set' : 
+    Boolean ShowPromptAreaButton 'get set' : 
+    Boolean ShowPageNavigationControls 'get set' : 
+    Boolean ShowBackButton 'get set' : 
+    Boolean ShowStopButton 'get set' : 
+    Boolean ShowRefreshButton 'get set' : 
+    Boolean ShowPrintButton 'get set' : 
+    Boolean ShowExportButton 'get set' : 
+    Boolean ShowZoomControl 'get set' : 
+    Boolean ShowFindControls 'get set' : 
+    Microsoft.Reporting.WinForms.ProcessingMode ProcessingMode 'get set' : 
+    Microsoft.Reporting.WinForms.IReportViewerMessages Messages 'get set' : 
+    Int32 CurrentPage 'get set' : 
+    Microsoft.Reporting.WinForms.DisplayMode DisplayMode 'get ' : 
+    Microsoft.Reporting.WinForms.PageCountMode PageCountMode 'get set' : 
+    Microsoft.Reporting.WinForms.ZoomMode ZoomMode 'get set' : 
+    Int32 ZoomPercent 'get set' : 
+    Int32 ZoomCalculated 'get ' : 
+    System.Windows.Forms.ToolStripRenderer ToolStripRenderer 'get set' : 
+    Microsoft.Reporting.WinForms.ReportViewerStatus CurrentStatus 'get ' : 
+    Boolean KeepSessionAlive 'get set' : 
+    Microsoft.Reporting.WinForms.SearchState SearchState 'get ' : 
+    System.Drawing.Printing.PrinterSettings PrinterSettings 'get set' : 
+  Events:
+    Microsoft.Reporting.WinForms.ZoomChangedEventHandler ZoomChange: 
+    Microsoft.Reporting.WinForms.PageNavigationEventHandler PageNavigation: 
+    Microsoft.Reporting.WinForms.ExportEventHandler ReportExport: 
+    System.ComponentModel.CancelEventHandler ReportRefresh: 
+    Microsoft.Reporting.WinForms.ReportPrintEventHandler Print: 
+    Microsoft.Reporting.WinForms.ReportPrintEventHandler PrintingBegin: 
+    Microsoft.Reporting.WinForms.BackEventHandler Back: 
+    Microsoft.Reporting.WinForms.BookmarkNavigationEventHandler BookmarkNavigation: 
+    System.ComponentModel.CancelEventHandler Toggle: 
+    Microsoft.Reporting.WinForms.DrillthroughEventHandler Drillthrough: 
+    System.ComponentModel.CancelEventHandler ViewButtonClick: 
+    Microsoft.Reporting.WinForms.SortEventHandler Sort: 
+    Microsoft.Reporting.WinForms.HyperlinkEventHandler Hyperlink: 
+    Microsoft.Reporting.WinForms.DocumentMapNavigationEventHandler DocumentMapNavigation: 
+    Microsoft.Reporting.WinForms.RenderingCompleteEventHandler RenderingComplete: 
+    System.ComponentModel.CancelEventHandler RenderingBegin: 
+    Microsoft.Reporting.WinForms.SearchEventHandler Search: 
+    Microsoft.Reporting.WinForms.ReportErrorEventHandler ReportError: 
+    System.EventHandler`1[System.EventArgs] StatusChanged: 
+    Microsoft.Reporting.WinForms.ReportCredentialsEventHandler SubmittingDataSourceCredentials: 
+    Microsoft.Reporting.WinForms.ReportParametersEventHandler SubmittingParameterValues: 
+    System.EventHandler PageSettingsChanged: 
+  Methods:
+    PrintDialog(PrinterSettings): PrivateScope, Public, HideBySig
+    GetPageSettings(): PrivateScope, Public, HideBySig
+    ResetPageSettings(): PrivateScope, Public, HideBySig
+    SetPageSettings(PageSettings): PrivateScope, Public, HideBySig
+    get_PrinterSettings(): PrivateScope, Public, HideBySig, SpecialName
+    set_PrinterSettings(PrinterSettings): PrivateScope, Public, HideBySig, SpecialName
+    SetDisplayMode(DisplayMode): PrivateScope, Public, HideBySig
+    ExportDialog(RenderingExtension): PrivateScope, Public, HideBySig
+    ExportDialog(RenderingExtension, String): PrivateScope, Public, HideBySig
+    ExportDialog(RenderingExtension, String, String): PrivateScope, Public, HideBySig
+    PageSetupDialog(): PrivateScope, Public, HideBySig
+    add_PageSettingsChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageSettingsChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowProgress(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_WaitControlDisplayAfter(): PrivateScope, Public, HideBySig, SpecialName
+    set_WaitControlDisplayAfter(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowContextMenu(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowContextMenu(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowDocumentMapButton(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowDocumentMapButton(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowPromptAreaButton(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowPromptAreaButton(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowPageNavigationControls(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowPageNavigationControls(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowBackButton(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowBackButton(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowStopButton(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowStopButton(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowRefreshButton(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowRefreshButton(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowPrintButton(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowPrintButton(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowExportButton(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowExportButton(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowZoomControl(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowZoomControl(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowFindControls(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowFindControls(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ProcessingMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_ProcessingMode(ProcessingMode): PrivateScope, Public, HideBySig, SpecialName
+    get_Messages(): PrivateScope, Public, HideBySig, SpecialName
+    set_Messages(IReportViewerMessages): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentPage(): PrivateScope, Public, HideBySig, SpecialName
+    set_CurrentPage(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_DisplayMode(): PrivateScope, Public, HideBySig, SpecialName
+    get_PageCountMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_PageCountMode(PageCountMode): PrivateScope, Public, HideBySig, SpecialName
+    get_ZoomMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZoomMode(ZoomMode): PrivateScope, Public, HideBySig, SpecialName
+    get_ZoomPercent(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZoomPercent(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ZoomCalculated(): PrivateScope, Public, HideBySig, SpecialName
+    get_ToolStripRenderer(): PrivateScope, Public, HideBySig, SpecialName
+    set_ToolStripRenderer(ToolStripRenderer): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentStatus(): PrivateScope, Public, HideBySig, SpecialName
+    get_KeepSessionAlive(): PrivateScope, Public, HideBySig, SpecialName
+    set_KeepSessionAlive(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    GetTotalPages(): PrivateScope, Public, HideBySig
+    GetTotalPages(PageCountMode&(Out)): PrivateScope, Public, HideBySig
+    CancelRendering(Int32): PrivateScope, Public, HideBySig
+    PerformBack(): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    Reset(): PrivateScope, Public, HideBySig
+    RefreshReport(): PrivateScope, Public, HideBySig
+    Find(String, Int32): PrivateScope, Public, HideBySig
+    FindNext(): PrivateScope, Public, HideBySig
+    get_SearchState(): PrivateScope, Public, HideBySig, SpecialName
+    JumpToBookmark(String): PrivateScope, Public, HideBySig
+    JumpToDocumentMapId(String): PrivateScope, Public, HideBySig
+    PrintDialog(): PrivateScope, Public, HideBySig
+    add_ZoomChange(ZoomChangedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ZoomChange(ZoomChangedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_PageNavigation(PageNavigationEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageNavigation(PageNavigationEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ReportExport(ExportEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ReportExport(ExportEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ReportRefresh(CancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ReportRefresh(CancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Print(ReportPrintEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Print(ReportPrintEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_PrintingBegin(ReportPrintEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_PrintingBegin(ReportPrintEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Back(BackEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Back(BackEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_BookmarkNavigation(BookmarkNavigationEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_BookmarkNavigation(BookmarkNavigationEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Toggle(CancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Toggle(CancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Drillthrough(DrillthroughEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Drillthrough(DrillthroughEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ViewButtonClick(CancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ViewButtonClick(CancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Sort(SortEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Sort(SortEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Hyperlink(HyperlinkEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Hyperlink(HyperlinkEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_DocumentMapNavigation(DocumentMapNavigationEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_DocumentMapNavigation(DocumentMapNavigationEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_RenderingComplete(RenderingCompleteEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RenderingComplete(RenderingCompleteEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_RenderingBegin(CancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RenderingBegin(CancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Search(SearchEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Search(SearchEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ReportError(ReportErrorEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ReportError(ReportErrorEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_StatusChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_StatusChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_SubmittingDataSourceCredentials(ReportCredentialsEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SubmittingDataSourceCredentials(ReportCredentialsEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_SubmittingParameterValues(ReportParametersEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SubmittingParameterValues(ReportParametersEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_ServerReport(): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalReport(): PrivateScope, Public, HideBySig, SpecialName
+    get_BorderStyle(): PrivateScope, Public, HideBySig, SpecialName
+    set_BorderStyle(BorderStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_BackColor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackColor(Color): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BackgroundImage(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackgroundImage(Image): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BackgroundImageLayout(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackgroundImageLayout(ImageLayout): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_DocumentMapWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_DocumentMapWidth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_IsDocumentMapWidthFixed(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsDocumentMapWidthFixed(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_DocumentMapCollapsed(): PrivateScope, Public, HideBySig, SpecialName
+    set_DocumentMapCollapsed(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_PromptAreaCollapsed(): PrivateScope, Public, HideBySig, SpecialName
+    set_PromptAreaCollapsed(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowParameterPrompts(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowParameterPrompts(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowCredentialPrompts(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowCredentialPrompts(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowToolBar(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowToolBar(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowProgress(): PrivateScope, Public, HideBySig, SpecialName
+Struct Microsoft.Reporting.WinForms.DisplayMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.Reporting.WinForms.DisplayMode Normal = 0 : Public, Static, Literal, HasDefault
+    Microsoft.Reporting.WinForms.DisplayMode PrintLayout = 1 : Public, Static, Literal, HasDefault
+Class Microsoft.Reporting.WinForms.ReportViewerStatus: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Properties:
+    Boolean CanNavigatePages 'get ' : 
+    Boolean CanNavigateBack 'get ' : 
+    Boolean InCancelableOperation 'get ' : 
+    Boolean CanRefreshData 'get ' : 
+    Boolean CanPrint 'get ' : 
+    Boolean CanSearch 'get ' : 
+    Boolean CanContinueSearch 'get ' : 
+    Boolean CanChangeDisplayModes 'get ' : 
+    Boolean CanExport 'get ' : 
+    Boolean CanChangeZoom 'get ' : 
+    Boolean IsPromptingSupported 'get ' : 
+    Boolean HasPromptsToDisplay 'get ' : 
+    Boolean CanSubmitPromptAreaValues 'get ' : 
+    Boolean ArePromptsVisible 'get ' : 
+    Boolean HasDocumentMapToDisplay 'get ' : 
+    Boolean IsDocumentMapVisible 'get ' : 
+  Methods:
+    get_CanNavigatePages(): PrivateScope, Public, HideBySig, SpecialName
+    get_CanNavigateBack(): PrivateScope, Public, HideBySig, SpecialName
+    get_InCancelableOperation(): PrivateScope, Public, HideBySig, SpecialName
+    get_CanRefreshData(): PrivateScope, Public, HideBySig, SpecialName
+    get_CanPrint(): PrivateScope, Public, HideBySig, SpecialName
+    get_CanSearch(): PrivateScope, Public, HideBySig, SpecialName
+    get_CanContinueSearch(): PrivateScope, Public, HideBySig, SpecialName
+    get_CanChangeDisplayModes(): PrivateScope, Public, HideBySig, SpecialName
+    get_CanExport(): PrivateScope, Public, HideBySig, SpecialName
+    get_CanChangeZoom(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsPromptingSupported(): PrivateScope, Public, HideBySig, SpecialName
+    get_HasPromptsToDisplay(): PrivateScope, Public, HideBySig, SpecialName
+    get_CanSubmitPromptAreaValues(): PrivateScope, Public, HideBySig, SpecialName
+    get_ArePromptsVisible(): PrivateScope, Public, HideBySig, SpecialName
+    get_HasDocumentMapToDisplay(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsDocumentMapVisible(): PrivateScope, Public, HideBySig, SpecialName

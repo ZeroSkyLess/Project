@@ -1,0 +1,96 @@
+:- dynamic event/1,impression/1.
+
+go :-open('outfit.txt',append,Stream),repeat,
+	write('What is your gender? [female / male]\n'),
+	write(Stream,'What is your gender? [female / male]\n '),
+
+       read(Gender),
+	write(Stream,Gender),
+       (   Gender=stop, close(Stream),!;
+	assert(gender(Gender)),
+	write(Stream,gender(Gender)),
+	write('What are you going to do today? [interview / presentation / business / dinner / sport /dating] \n '),
+read(Event),
+assert(event(Event)),
+	    write(Stream,event(Event)),
+
+	write('What do you want look like? [ elegant / smart / hardworking ]\n'),
+read(Impression),
+assert(impression(Impression)),
+
+      hypothesize(Gender,Outfit1,Outfit2),
+      write('I suggest that u should wear '),
+      write(Outfit1),
+      write(' with '),
+      write(Outfit2),
+      write(' will be more suitable for you today.'),
+      nl,
+      undo).
+
+%female business
+hypothesize(female,formal,gold_pearl)   :- event(business), impression(smart), !.
+hypothesize(female,formal,blouse)   :- event(business), impression(elegant), !.
+hypothesize(female,formal,slacks)   :- event(business), impression(hardworking), !.
+
+%female dating
+hypothesize(female,casual,gold_pearl)   :- event(dating), impression(smart), !.
+hypothesize(female,floor_length_evening_gown,blouse)   :- event(dating), impression(elegant), !.
+hypothesize(female,casual,slacks)   :- event(dating), impression(hardworking), !.
+
+%female sport
+hypothesize(female,casual,silver_pearl)   :- event(sport), impression(smart), !.
+hypothesize(female,casual,blouse)   :- event(sport), impression(elegant), !.
+hypothesize(female,casual,slacks)   :- event(sport), impression(hardworking), !.
+
+%female presentation
+hypothesize(female,professional,black_panthhose)   :- event(presentation), impression(smart), !.
+hypothesize(female,professional,blouse)   :- event(presentation), impression(elegant), !.
+hypothesize(female,professional,slacks)   :- event(presentation), impression(hardworking), !.
+
+%female interview
+hypothesize(female,formal,knee_length_dress)   :- event(interview), impression(smart), !.
+hypothesize(female,formal,blouse)   :- event(interview), impression(elegant), !.
+hypothesize(female,formal,slacks)   :- event(interview), impression(hardworking), !.
+
+%Female dinner
+hypothesize(female,formal,floor_length_evening_gown)   :- event(interview), impression(smart), !.
+hypothesize(female,formal,blouse)   :- event(interview), impression(elegant), !.
+hypothesize(female,formal,slacks)   :- event(interview), impression(hardworking), !.
+
+
+
+%Male business
+hypothesize(male,formal,white_collar)   :- event(business), impression(smart), !.
+hypothesize(male,formal,white_tuxedo)   :- event(business), impression(elegant), !.
+hypothesize(male,formal,sweaters)   :- event(business), impression(hardworking), !.
+
+%Male dating
+hypothesize(male,casual,black_tuxedo)   :- event(dating), impression(smart), !.
+hypothesize(male,casual,white_tuxedo)   :- event(dating), impression(elegant), !.
+hypothesize(male,casual,sweaters)   :- event(dating), impression(hardworking), !.
+
+%Male sport
+hypothesize(male,casual,white_collar)   :- event(sport), impression(smart), !.
+hypothesize(male,casual,white_tuxedo)   :- event(sport), impression(elegant), !.
+hypothesize(male,casual,sweaters)   :- event(sport), impression(hardworking), !.
+
+%Male presentation
+hypothesize(male,professional,black_tie)   :- event(presentation), impression(smart), !.
+hypothesize(male,professional,white_tuxedo)   :- event(presentation), impression(elegant), !.
+hypothesize(male,professional,sweaters)   :- event(presentation), impression(hardworking), !.
+
+%Male interview
+hypothesize(male,formal,black_shoe)   :- event(interview), impression(smart), !.
+hypothesize(male,formal,white_tuxedo)   :- event(interview), impression(elegant), !.
+hypothesize(male,formal,sweaters)   :- event(interview), impression(hardworking), !.
+
+%Male dinner
+hypothesize(male,formal,white_collar)   :- event(interview), impression(smart), !.
+hypothesize(male,formal,white_tuxedo)   :- event(interview), impression(elegant), !.
+hypothesize(male,formal,sweaters)   :- event(interview), impression(hardworking), !.
+
+
+
+undo :- retract(event(_)),retract(impression(_)),fail.
+%undo :- retract(no(_)),fail.
+undo.
